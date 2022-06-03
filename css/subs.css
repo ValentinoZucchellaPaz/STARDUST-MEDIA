@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+/* INTRO Y TITULOS */
+.intro_media img{
+    width: 100%;
+    opacity: 0.6;
+}
+.intro_media div {
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    margin-top: 4rem;
+    z-index: 2;
+}
+.intro_media_title {
+    font-family: 'PT Serif', serif;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: lighter;
+}
+.intro_media h2 {
+    font-size: 5rem;
+}
+.intro_media h3 {
+    font-size: 3rem;
+}
+.indiana_text p{
+    color: rgb(250, 250, 0);
+    position: relative;
+    margin-top: -10rem;
+    text-align: center;
+    font-size: 1.5rem;
+}
+/* FIN INTRODUCCION Y TITULOS */
+
+/* INFO */
+/* LANGUAGES */
+.subs_languages h2 {
+    font-family: 'PT Serif', serif;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 1rem;
+    margin-bottom: 2.5rem;
+}
+.subs_languages_grid {
+    display: grid;
+    grid-template-columns: repeat (3 1fr);
+    grid-template-columns: repeat (2 1fr);
+    grid-template-areas: 
+    "eng_img spa_img por_img"
+    "eng_p spa_p por_p";
+    justify-content: center;
+    text-align: center;
+    column-gap: 2rem;
+}
+.subs_languages_grid p {
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    font-size: 4rem;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+    padding: 1rem;
+}
+.subs_languages_grid h6 {
+    font-size: 1rem;
+    font-weight: bolder;
+}
+.others {
+    opacity: 0.5;
+    font-size: 1rem;
+    text-align: center;
+    margin: 1rem;
+}
+.others a {
+    color: currentColor;
+}
+/* FIN DE LANGUAGES */
+
+/* SUBS Y CSS */
+.subs_cc_grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 
+    "h2 h2"
+    "p p";
+    justify-content: space-evenly;
+}
+.subs_cc_grid h2 {
+    font-family: 'PT Serif', serif;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 1rem;
+    margin-top: 2.5rem;
+    background-color: black;
+    color: white;
+    font-size: 2.5rem;
+    border-radius: 20px;
+}
+.subs_cc_grid p {
+    width: 20rem;
+    text-align: center;
+}
+/* FIN DE SUBS Y CC */
+
+/* CLIENTS */
+.clients {
+    background-color: rgba(0, 0, 0, 0.8);
+    margin: 3rem;
+    padding: 2rem;
+    border-radius: 20px;
+
+}
+.clients h2 {
+    color: white;
+    text-align: start;
+    text-transform: uppercase;
+    font-weight: lighter;
+    margin-left: 4rem;
+    margin-bottom: 2rem;
+}
+.clients p {
+    color: white;
+}
+.clients_img_wrapper {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 2rem;
+}
+.clients_img_wrapper img {
+    width: 12vw;
+    height: 12vw;
+    border-radius: 50px;
+}

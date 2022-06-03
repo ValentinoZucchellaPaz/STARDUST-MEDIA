@@ -1,0 +1,145 @@
+body{
+    width: 100%;
+}
+.backround_img {
+    width: 100%;
+    opacity: 0.1;
+    height: 50vw;
+}
+.backround_img_wrapper h2 {
+    z-index: 2;
+    position: absolute;
+    font-size: 4rem;
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+    margin-top: 5vw;
+    color: white;
+    padding: 2rem;
+    font-weight: lighter;
+}
+.down_arrow_wrapper {
+    position: relative;
+    z-index: 2;
+    width: 10%;
+    left: 45%;
+    bottom: 20rem;
+}
+/* FIN TITULO */
+
+/* GRAFICO */
+
+.service_graphic {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 4rem;
+}
+.movie_icon img {
+    width: 10vw;
+    margin: 4vw;
+    border-radius: 20px;
+}
+.arrow_icon img{
+    width: 3vw;
+    margin: 4vw;
+    margin-top: 6vw;
+}
+.company_icon {
+    width: 10vw;
+    margin: 4vw;
+    background-color: black;
+    border-radius: 50px;
+}
+.company_icon p {
+    color: white;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 2.5rem;
+    margin-top: 2.5vw;
+    padding: 1vw;
+}
+.stardust_icon {
+    margin: 2vw;
+    padding: 2vw;
+    padding-bottom: 0vw;
+    background-color: black;
+    border-radius: 50px;
+}
+/* FIN GRAFICO */
+
+/* TEXTO SOBRE STARDUST */
+.consultancy_service_text {
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 1.5;
+}
+.others {
+    opacity: 0.5;
+    font-size: 1rem;
+    text-align: center;
+    margin: 1rem;
+}
+.others a {
+    color: currentColor;
+}
+/* FIN TEXTO STARDUST */
+
+/* CLIENTS */
+.clients {
+    background-color: rgba(0, 0, 0, 0.8);
+    margin: 3rem;
+    padding: 2rem;
+    border-radius: 20px;
+
+}
+.clients h2 {
+    color: white;
+    text-align: start;
+    text-transform: uppercase;
+    font-weight: lighter;
+    margin-left: 4rem;
+    margin-bottom: 2rem;
+}
+.clients p {
+    color: white;
+}
+.clients_img_wrapper {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 2rem;
+}
+.clients_img_wrapper img {
+    width: 12vw;
+    height: 12vw;
+}
+/* FIN CLIENTS */
+
+/* CONTACT BUTTON */
+.button_wrapper {
+    margin: 3rem;
+    text-align: center;
+}
+.contact_button {
+    position: relative;
+    font-size: 1rem;
+    text-transform: uppercase;
+    padding: 1rem 2.5rem;
+    display: inline-block;
+    border-radius: 50px;
+    border: none;
+    font-family: inherit;
+    background-color: white;
+    text-align: center;
+}
+.contact_button a {
+   font-size: 1.5rem;
+   text-decoration: none;
+   color: black;
+   vertical-align: middle;
+}
+   
+.contact_button:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}

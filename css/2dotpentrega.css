@@ -1,0 +1,220 @@
+                                        /* HEADER, FOOTER, BODY BASIS */
+/* colores partes de pag, font logo y body */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'PT Serif', serif;;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+@font-face {
+    font-family: Amalfi;
+    src: url(../Amalfi.ttf);
+}
+header,footer {
+    background-color: rgb(0, 0, 0);
+} 
+                                        /* HEADER */
+/* header menú */
+nav{
+    padding: 1rem;
+    margin-top: -5rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+.menu {
+    list-style-type: none;
+    margin: 0.7rem;
+    display: flex;
+    justify-content: flex-end;
+}
+.menu li {
+    display: inline-block;
+    text-align: center;
+}
+.menu li a {
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    margin: 0.7rem;
+    padding: 0.7rem;
+}
+.menu li a:hover {
+    background-color: rgb(66, 66, 66);
+    border-radius: 30px;
+}
+/* fin de menú */
+
+/* logo header */
+.logo_name_wrapper {
+    color: white;
+    text-align: center;
+    width: 33%;
+}
+.logo_name_wrapper a{
+    text-decoration: none;
+    color: white;
+}
+.logo_name_title{
+    font-family: Amalfi;
+    font-size: 2rem;
+    font-weight: bold;
+}
+.logo_name_subtitle {
+    font-family: 'PT Serif', serif;
+    font-weight: lighter;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+}
+                                            /* FIN HEADER */
+
+                                            /* FOOTER */
+
+/* footer logo*/
+footer {
+    display: flex;
+}
+footer article {
+    width: 33%;
+}
+footer h2,h4 {
+    text-align: center;
+}
+.logo_name_footer_wrapper {
+    color: white;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.logo_name_footer_wrapper a{
+    text-decoration: none;
+    color: white;
+}
+
+/* footer contact */
+.datos {
+    color: white;
+}
+.datos div {
+    margin-top: 1.5rem;
+    text-align: center;
+}
+.datos img {
+    text-align: center;
+    vertical-align: middle;
+    width: 2rem;
+    margin-right: 0.5rem;
+}
+
+/* footer about us */
+.footer_about_us {
+    text-align: center;
+    color: white; 
+    margin-top: 1.25rem;
+    margin-bottom: 1rem; 
+    line-height: 1.25;  
+}
+.footer_about_us h3{
+    margin-bottom: 0.25rem;
+    text-transform: uppercase;
+    font-weight: lighter;
+    letter-spacing: 2px;
+    font-size: 1.25rem;
+    display: inline-block;
+    position: relative;
+}
+
+h3::after,h3::before { /*lineas a costados de ABOUT US*/
+    content: '';
+    position: absolute;
+    width: 3rem;
+    height: 0.1rem;
+    background-color: currentColor;
+    top: 0.6rem;
+}
+h3::before {
+    left: -3.5rem;
+}
+h3::after {
+    right: -3.5rem;
+}
+
+.footer_about_us p {
+    font-size: 0.8rem;
+}
+                                        /* FIN FOOTER */
+
+
+                                        /* CONTACT FORM */
+
+main section.contact_wrapper {
+    display: flex;
+}
+.divider {
+    width: 50%;
+    margin: 2rem;
+}
+#contact_us {
+    text-align: center;
+    margin: 1.5rem;
+    font-size: 2rem;
+}
+#lets_talk{
+    font-size: 1.25rem;
+    text-decoration: underline;
+}
+.divider img {
+    width: 100%;
+}
+.contact_form_wrapper div {
+    text-align: center;
+    margin: 1rem;
+    padding: 0.5rem;
+}
+.contact_form_wrapper input,select, textarea {
+    border-radius: 10px;
+    height: 2rem;
+    width: 80%;
+    text-align: center;
+    border-color: black;
+    border-width: 1px;
+    font-family: 'PT Serif', serif;
+    font-size: 1rem;
+}
+.contact_form_text_problem textarea {
+    height: 6rem;
+    vertical-align: text-top;
+    line-break: auto;
+    overflow: auto;
+    padding: 0.5rem;
+}
+
+.submit_button input{
+    width: 8rem;
+    border-radius: 30px;
+}
+.submit_button input:hover {
+    font-weight: bold;
+}
+/* fin formulario */
+/* nueva seccion */
+
+.main_mail_wrapper div {
+    display: inline;
+    margin-left: 5%;
+}
+.main_mail_wrapper img {
+    width: 2rem;
+    vertical-align: middle;
+    font-size: 1rem;
+}
+.main_phone img {
+    height: 2rem;
+}
+.main_email img {
+    height: 1.5rem;
+}
+
+                                        /* FIN CONTACT FORM */

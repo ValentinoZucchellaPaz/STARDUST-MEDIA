@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* DIVIDIR FORMULARIO DE IMAGEN */
+main section.contact_wrapper {
+    display: flex;
+}
+.divider {
+    width: 50%;
+    margin: 2rem;
+}
+main #contact_us { /*TITULO*/
+    text-align: center;
+    margin: 1.5rem;
+    font-size: 2rem;
+}
+main #lets_talk{
+    font-size: 1.25rem;
+    text-decoration: underline;
+}
+.divider img {
+    width: 100%;
+}
+.contact_form_wrapper div {
+    text-align: center;
+    margin: 1rem;
+    padding: 0.5rem;
+}
+input,select, textarea {
+    border-radius: 10px;
+    height: 2rem;
+    width: 80%;
+    text-align: center;
+    border-color: black;
+    border-width: 1px;
+    font-family: 'PT Serif', serif;
+    font-size: 1rem;
+}
+.contact_form_text_problem textarea {
+    height: 6rem;
+    vertical-align: text-top;
+    line-break: auto;
+    overflow: auto;
+    padding: 0.5rem;
+}
+
+.submit_button input{
+    width: 8rem;
+    position: relative;
+    font-size: 1rem;
+    text-transform: uppercase;
+    border-radius: 50px;
+    border: none;
+    background-color: white;
+    text-align: center;
+}
+.submit_button input:hover {
+    font-weight: bold;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+
+}
+/* FIN FORM */
+/* MAIL Y CELULAR ABAJO DE FORM */
+
+.main_mail_wrapper div {
+    display: inline;
+    margin-left: 5%;
+}
+.main_mail_wrapper img {
+    width: 2rem;
+    vertical-align: middle;
+    font-size: 1rem;
+}
+.main_phone img {
+    height: 2rem;
+}
+.main_email img {
+    height: 1.5rem;
+}
+
