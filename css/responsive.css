@@ -23,6 +23,7 @@ main {
 footer {
     grid-area: footer;
 }
+/* sacar grid */
 @font-face {
     font-family: Amalfi;
     src: url(../Amalfi.ttf);

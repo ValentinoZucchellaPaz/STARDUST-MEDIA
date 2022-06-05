@@ -1,4 +1,3 @@
-esta es la pagina de la pelicula que produjo stardustmedia
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,39 +6,118 @@ esta es la pagina de la pelicula que produjo stardustmedia
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cosas de Adultos</title>
 
-    <link rel="stylesheet" href="css/responsive.css">
-
+<!-- link bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+<!-- archivo css -->
+    <link rel="stylesheet" href="css/2dotpentrega.css">
+<!-- fuentes links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Dancing+Script:wght@600&family=Dosis:wght@500&family=Oleo+Script+Swash+Caps&family=PT+Serif&display=swap" rel="stylesheet">
+    <link rel="import" href="/coder/proyect/Amalfi.ttf">
 <!-- animaciones link -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 <body>
-    <header>
-        <div class="logo_name_wrapper">
-            <h1 id="inicio" class="logo_name_title"><a href="C:\Users\Valentino\Desktop\primer sitio web\coder\proyect\index.html">Stardust Media</a></h1>
-            <h2 class="logo_name_subtitle"><a href="C:\Users\Valentino\Desktop\primer sitio web\coder\proyect\index.html">A CONTENT COMPANY</a></h2>
-        </div>
-        <nav class="menu_nav">
-            <ul class="menu">
-                <li> <a href="index.html" >Home</a> </li>
-                <li> <a href="subtitle.html" >Subtitle</a> </li>
-                <li> <a href="consultancy.html">Consultancy</a> </li>
-                <li> <a href="contact.html">Contact</a> </li>
-            </ul>
-            
+    <header >
+        <!-- menu hamburguesa -->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <div class="logo_name_wrapper">
+                    <h1 id="inicio" class="logo_name_title"><a href="https://valentinozucchellapaz.github.io/coderhouse-proyect/index.html">Stardust Media</a></h1>
+                    <h2 class="logo_name_subtitle"><a href="https://valentinozucchellapaz.github.io/coderhouse-proyect/index.html">A CONTENT COMPANY</a></h2>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav menu_nav ms-auto">
+                        <li class="nav-item"> <a class="nav-link" href="https://valentinozucchellapaz.github.io/coderhouse-proyect/index.html" >Home</a> </li>
+                        <li class="nav-item"> <a class="nav-link" href="https://valentinozucchellapaz.github.io/coderhouse-proyect/subtitle.html" >Subtitle</a> </li>
+                        <li class="nav-item"> <a class="nav-link" href="https://valentinozucchellapaz.github.io/coderhouse-proyect/consultancy.html">Consultancy</a> </li>
+                        <li class="nav-item"> <a class="nav-link" href="https://valentinozucchellapaz.github.io/coderhouse-proyect/contact.html">Contact</a> </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
-    </header><hr>
+    </header>
 
+<!-- mañana hacer carrusel y tambien ver clase sass -->
     <main>
-        <!-- no poner nada aun porque no hay casi nada de la pelicula, solo trailer no oficial -->
-        <section class="title&media">
-            <h2>A Stardust Production</h2>
-            <h3>Cosas de adultos</h3>
-            <video class="trailer_video" src="imagenes/y2mate.com - COSAS DE ADULTOS TRAILER PROVISIONAL_1080p.mp4" preload="auto" autoplay muted controls></video>
+        
+        <section> <!-- carrusel -->
+            <div id="carouselExampleInterval" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-inner" >
+                  <div class="carousel-caption" style="z-index: 2;">
+                    <h5>A STARDUST PRODUCTION</h5>
+                  </div>
+                  <div class="carousel-item active" data-bs-interval="2000">
+                    <img src="imagenes/fotograma del trailer/COSAS DE ADULTOS (TRAILER PROVISIONAL)_Moment4.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item" data-bs-interval="2000">
+                    <img src="imagenes/fotograma del trailer/COSAS DE ADULTOS (TRAILER PROVISIONAL)_Moment.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item" data-bs-interval="2000">
+                    <img src="imagenes/fotograma del trailer/COSAS DE ADULTOS (TRAILER PROVISIONAL)_Moment2.jpg" class="d-block w-100 h-100" alt="...">
+                  </div>
+                  <div class="carousel-item" data-bs-interval="2000">
+                    <img src="imagenes/fotograma del trailer/COSAS DE ADULTOS (TRAILER PROVISIONAL)_Moment3.jpg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
         </section>
+
         <section class="info">
-            <p></p>
-            <img src=""  alt="">
-        </section>
+            <article class="info_services">
+                <div class="info_services_title wow animate__animated animate__slideInUp">
+                    <h2>Services</h2>
+                </div>
+                <div class="info_services_upper_arrow wow animate__animated animate__slideInUp">
+                    <img src="imagenes/{ mirando para abajo.png" alt="">
+                </div>
+                <div class="info_services_button_wrapper row wow animate__animated animate__slideInUp"> 
+                    <div class="consultacy_button col">
+                        <div class="row services_button">
+                            <a href="consultancy.html"><img src="imagenes/consultora png.png" alt="" class="services_button"> </a> 
+                        </div>
+                        <div class="row">
+                            <a href="consultancy.html" class="consultancy_link">Consultancy</a>
+                        </div>
+                    </div>
+                    <div class="subtitle_button col">
+                        <div class="row services_button">
+                            <a href="subtitle.html"><img src="imagenes/subs png.png" alt="" class="services_button"></a>
+                        </div>
+                        <div class="row ">
+                            <a href="subtitle.html" class="subs_link">Subtitle & CC</a>
+                        </div>
+                    </div>
+                    <div class="produtions_button col">
+                        <div class="row services_button">
+                            <a href="cosas de adultos.html"><img src="imagenes/production png.png" alt="" class="services_button"></a>
+                        </div>
+                        <div class="row">
+                            <a href="cosas de adultos.html" class="production_link">Stardust Production</a>
+                        </div>
+                        
+                    </div>
+                    
+                    
+                    
+                </div>
+                
+                <div class="info_services_lower_arrow wow animate__animated animate__slideInUp">
+                    <img src="imagenes/{ mirando para abajo.png" alt="">
+                </div>
+            </article>
     </main>
 
 
@@ -74,5 +152,7 @@ esta es la pagina de la pelicula que produjo stardustmedia
 <!-- wow js -->
     <script src="js/wow.min.js"></script>
     <script>new WOW().init();</script>
+<!-- boostrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>

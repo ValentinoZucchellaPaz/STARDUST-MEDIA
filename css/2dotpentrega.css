@@ -1,58 +1,62 @@
-                                        /* HEADER, FOOTER, BODY BASIS */
-/* colores partes de pag, font logo y body */
+/* colores, font, logo y body grid */
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 body {
-    font-family: 'PT Serif', serif;;
+    font-family: 'PT Serif', serif;
     background-color: rgba(0, 0, 0, 0.5);
 }
 @font-face {
     font-family: Amalfi;
     src: url(../Amalfi.ttf);
 }
-header,footer {
-    background-color: rgb(0, 0, 0);
-} 
-                                        /* HEADER */
-/* header menú */
-nav{
+header, footer {
+    background-color: black;
+}
+a:hover {
+    color: currentColor;
+}
+
+                                            /* HEADER */
+header {
     padding: 1rem;
-    margin-top: -5rem;
+    align-items: center;
+}
+/* menu */
+.menu_nav{
+    padding: 1rem;
     font-size: 1rem;
     text-transform: uppercase;
 }
 
-.menu {
-    list-style-type: none;
-    margin: 0.7rem;
-    display: flex;
-    justify-content: flex-end;
-}
-.menu li {
-    display: inline-block;
+.nav-link{
+    transition: all 0.1s ease-in;
+    display: block;
     text-align: center;
-}
-.menu li a {
     text-decoration: none;
     color: white;
-    display: inline-block;
+    border-radius: 30px;
     margin: 0.7rem;
     padding: 0.7rem;
 }
-.menu li a:hover {
+.nav-link:hover {
+    transform: scale(1.1,1.1);
+    color: white;
     background-color: rgb(66, 66, 66);
-    border-radius: 30px;
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.205);
 }
-/* fin de menú */
+.navbar-toggler {
+    background-color: rgba(255, 255, 255, 0.808);
+    padding: 0.5rem;
+}
 
 /* logo header */
 .logo_name_wrapper {
     color: white;
     text-align: center;
-    width: 33%;
+    margin-top: 1rem;
 }
 .logo_name_wrapper a{
     text-decoration: none;
@@ -69,10 +73,8 @@ nav{
     font-size: 0.8rem;
     letter-spacing: 2px;
 }
-                                            /* FIN HEADER */
 
-                                            /* FOOTER */
-
+/* FOOTER */
 /* footer logo*/
 footer {
     display: flex;
@@ -83,10 +85,13 @@ footer article {
 footer h2,h4 {
     text-align: center;
 }
+.footer_header {
+    display: block;
+    margin: auto;
+}
 .logo_name_footer_wrapper {
     color: white;
     text-align: center;
-    margin-bottom: 2rem;
 }
 .logo_name_footer_wrapper a{
     text-decoration: none;
@@ -126,95 +131,240 @@ footer h2,h4 {
     position: relative;
 }
 
-h3::after,h3::before { /*lineas a costados de ABOUT US*/
-    content: '';
-    position: absolute;
-    width: 3rem;
-    height: 0.1rem;
-    background-color: currentColor;
-    top: 0.6rem;
-}
-h3::before {
-    left: -3.5rem;
-}
-h3::after {
-    right: -3.5rem;
-}
-
-.footer_about_us p {
-    font-size: 0.8rem;
-}
-                                        /* FIN FOOTER */
-
-
-                                        /* CONTACT FORM */
-
-main section.contact_wrapper {
+.footer_about_us div {
+    margin: 0.75rem;
+    border-left: 5px white;
     display: flex;
+    flex-direction: column;
 }
-.divider {
-    width: 50%;
-    margin: 2rem;
-}
-#contact_us {
-    text-align: center;
-    margin: 1.5rem;
-    font-size: 2rem;
-}
-#lets_talk{
-    font-size: 1.25rem;
-    text-decoration: underline;
-}
-.divider img {
-    width: 100%;
-}
-.contact_form_wrapper div {
-    text-align: center;
-    margin: 1rem;
-    padding: 0.5rem;
-}
-.contact_form_wrapper input,select, textarea {
-    border-radius: 10px;
-    height: 2rem;
-    width: 80%;
-    text-align: center;
-    border-color: black;
-    border-width: 1px;
+.footer_about_us a {
+    margin-top: 0.5rem;
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: lighter;
     font-family: 'PT Serif', serif;
-    font-size: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    transition:all 0.1s ease-in;
 }
-.contact_form_text_problem textarea {
+.footer_about_us a:hover {
+    text-decoration: underline;
+    transform: scale(1.02);
+}
+/* CONTENT */
+                                                /* INDEX PAGE */
+/* video */
+.trailer_video {
+    width: 100%;
+    height: 70%;
+}
+.media h2 {
+    z-index: 2;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    margin-top: 2.5rem;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: lighter;
+}
+.media h2 a {
+    color: white;
+    text-decoration: none;
+}
+.carousel-caption {
+    top: 1.25rem;
+}
+.carousel-inner {
+    height: 100%;
+}
+
+
+/* services */
+/* {} esteticas */
+.info_services_upper_arrow img {
+    transform: rotate(180deg);
+    width: 75%;
     height: 6rem;
-    vertical-align: text-top;
-    line-break: auto;
-    overflow: auto;
-    padding: 0.5rem;
+}
+.info_services_lower_arrow img{
+    width: 75%;
+    height: 6rem;
+}
+.info_services_lower_arrow,.info_services_upper_arrow {
+    width: 100%;
+    position: relative;
+    text-align: center;
+    margin-top: 1rem;
+}
+.info_services_title {
+    width: 100%;
+    text-align: center;
+    margin-top: 2.5rem;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: lighter;
 }
 
-.submit_button input{
-    width: 8rem;
-    border-radius: 30px;
+/* services images */
+.info_services_button_wrapper {
+    margin: 20px auto;
+    width: 80%;
 }
-.submit_button input:hover {
-    font-weight: bold;
-}
-/* fin formulario */
-/* nueva seccion */
-
-.main_mail_wrapper div {
-    display: inline;
-    margin-left: 5%;
-}
-.main_mail_wrapper img {
-    width: 2rem;
-    vertical-align: middle;
+.consultancy_link,.subs_link,.production_link {
+    font-family: 'PT Serif', serif;
+    text-align: center;
     font-size: 1rem;
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    font-weight: bolder;
+    margin-top: 1rem;
 }
-.main_phone img {
-    height: 2rem;
-}
-.main_email img {
-    height: 1.5rem;
+.services_button {
+    width: 15vw;
+    margin: auto;
+    display: block;
+    text-align: center;
 }
 
-                                        /* FIN CONTACT FORM */
+/* about us text */
+.info_about_us p {
+    margin: 2rem 10rem;
+    text-align: justify;
+    letter-spacing: 1px;
+    line-height: 1.5;
+}
+
+
+
+
+@media screen and (max-width:500px) {
+    .row {
+        flex-direction: column;
+    }
+    .services_button {
+        width: auto;
+    }
+    .info_services_button_wrapper {
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width:768px) {
+
+    /* header y footer */
+    header {
+        flex-wrap: wrap;
+        padding-bottom: 0;
+    }
+    .menu_nav {
+        padding: 0;
+    }
+    .menu {
+        font-size: 0.75rem;
+        margin: 0;
+    }
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+    footer article {
+        width: 100%;
+    }
+    .footer_about_us div a{
+        font-size: 0.75rem;
+    }
+    footer .datos {
+        margin-bottom: 1rem;
+    }
+    .footer_header {
+        margin-top: 2rem;
+    }
+
+    /* index main */
+    .info_services_upper_arrow img {
+        height: 4rem;
+    }
+    .info_services_lower_arrow img{
+        height: 4rem;
+    }
+    .info_services_button_wrapper img {
+        width: 6rem;
+    }
+    .info_about_us p {
+        margin: 2rem 6rem;
+    }
+
+    /* contact */
+    main section .contact_wrapper {
+        flex: none;
+    }
+    #divider_display_none_responsive {
+        display: none;
+    }
+    .divider {
+        width: 100%;
+        margin: auto;
+    }
+    
+    input,select, textarea {
+        width: 50%;
+    }
+
+    /* consultancy */
+    .backround_img_wrapper h2 {
+        font-size: 2.5rem;
+    }
+    .stardust_icon {
+        border-radius: 25px;
+    }
+    .stardust_icon h2 {
+        font-size: 1rem;
+        word-wrap: normal;
+        width: 15vw;
+    }
+    .stardust_icon h3 {
+        font-size: 0.5rem;
+    }
+    .company_icon p{
+        font-size: 1.5rem;
+    }
+    .consultancy_service_text {
+        font-size: 1rem;
+    }
+    .movie_icon img {
+        border-radius: 10px;
+    }
+    .service_graphic {
+        padding: 0;
+    }
+    .clients h2 {
+        text-align: center;
+        margin-left: 0;
+        padding-top: 0;
+        margin-top: 0;
+    }
+
+    /* subtitles */
+    .intro_media h2 {
+        font-size: 2.5rem;
+    }
+    .intro_media h3 {
+        font-size: 1.5rem;
+    }
+    .indiana_text p{
+        font-size: 1rem;
+    }
+    .subs_languages h2 {
+        font-size: 1.5rem;
+    }
+    .subs_languages_grid p {
+        font-size: 2rem;
+    }
+    .subs_cc_grid h2 {
+        font-size: 1.5rem;
+    }
+}
+
