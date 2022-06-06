@@ -5,9 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Subtitle</title>
-
-    <link rel="stylesheet" href="css/responsive.css">
-
+<!-- link bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+<!-- archivos css -->
+    <link rel="stylesheet" href="css/2dotpentrega.css">
+<!-- fuentes link -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Dancing+Script:wght@600&family=Dosis:wght@500&family=Oleo+Script+Swash+Caps&family=PT+Serif&display=swap" rel="stylesheet">
@@ -15,21 +17,27 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head>
 <body>
-    <header>
-        <div class="logo_name_wrapper">
-            <h1 id="inicio" class="logo_name_title"><a href="https://valentinozucchellapaz.github.io/coderhouse-proyect/index.html">Stardust Media</a></h1>
-            <h2 class="logo_name_subtitle"><a href="https://valentinozucchellapaz.github.io/coderhouse-proyect/index.html">A CONTENT COMPANY</a></h2>
-        </div>
-        <nav class="menu_nav">
-            <ul class="menu">
-                <li> <a href="https://valentinozucchellapaz.github.io/coderhouse-proyect/index.html" >Home</a> </li>
-                <li> <a href="https://valentinozucchellapaz.github.io/coderhouse-proyect/subtitle.html" >Subtitle</a> </li>
-                <li> <a href="https://valentinozucchellapaz.github.io/coderhouse-proyect/consultancy.html">Consultancy</a> </li>
-                <li> <a href="https://valentinozucchellapaz.github.io/coderhouse-proyect/contact.html">Contact</a> </li>
-            </ul>
-            
+    <header >
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <div class="logo_name_wrapper">
+                    <h1 id="inicio" class="logo_name_title"><a href="https://valentinozucchellapaz.github.io/coderhouse-proyect/index.html">Stardust Media</a></h1>
+                    <h2 class="logo_name_subtitle"><a href="https://valentinozucchellapaz.github.io/coderhouse-proyect/index.html">A CONTENT COMPANY</a></h2>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav menu_nav ms-auto">
+                        <li class="nav-item"> <a class="nav-link" href="https://valentinozucchellapaz.github.io/coderhouse-proyect/index.html" >Home</a> </li>
+                        <li class="nav-item"> <a class="nav-link" href="https://valentinozucchellapaz.github.io/coderhouse-proyect/subtitle.html" >Subtitle</a> </li>
+                        <li class="nav-item"> <a class="nav-link" href="https://valentinozucchellapaz.github.io/coderhouse-proyect/consultancy.html">Consultancy</a> </li>
+                        <li class="nav-item"> <a class="nav-link" href="https://valentinozucchellapaz.github.io/coderhouse-proyect/contact.html">Contact</a> </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
-    </header><hr>
+    </header>
 
     <main>
         <section class="intro_media">
@@ -39,7 +47,6 @@
             </div>
             <img src="imagenes/indiana jpeg.jpg"></img>
             <div class="indiana_text"><p> [Indiana] This people know they are doing.</p></div>
-            <button class="arrow_down"><img src="" alt=""></button>
         </section>
         <section class="info">
             <article class="subs_languages wow animate__animated animate__slideInUp">
@@ -105,8 +112,10 @@
 
     </footer>
 
-<!-- wow js -->
+    <!-- wow js -->
     <script src="js/wow.min.js"></script>
     <script>new WOW().init();</script>
+    <!-- boostrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>

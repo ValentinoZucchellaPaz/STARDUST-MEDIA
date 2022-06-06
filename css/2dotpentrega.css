@@ -57,6 +57,7 @@ header {
     color: white;
     text-align: center;
     margin-top: 1rem;
+    margin: auto;
 }
 .logo_name_wrapper a{
     text-decoration: none;
@@ -237,22 +238,347 @@ footer h2,h4 {
     line-height: 1.5;
 }
 
-
-
-
-@media screen and (max-width:500px) {
-    .row {
-        flex-direction: column;
-    }
-    .services_button {
-        width: auto;
-    }
-    .info_services_button_wrapper {
-        margin-top: 0;
-    }
+                                                /* CONSULTANCY */
+/* titulo */
+.backround_img {
+    width: 100%;
+    opacity: 0.1;
+    height: 50vw;
+}
+.backround_img_wrapper h2 {
+    z-index: 2;
+    position: absolute;
+    font-size: 4rem;
+    text-transform: uppercase;
+    width: 100%;
+    text-align: center;
+    top: 25vw;
+    color: white;
+    padding: 2rem;
+    font-weight: lighter;
+}
+.down_arrow_wrapper {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    top: 45vw;
+}
+.down_arrow {
+    z-index: 2;
+    width: 10%;
 }
 
-@media screen and (max-width:768px) {
+/* grafico */
+.consultancy_service {
+    padding: 4rem;
+}
+.services_button img {
+    width: 10vw;
+    margin: auto;
+    border-radius: 20px;
+}
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.arrow_icon{
+    width: auto;
+    margin: auto;
+}
+.company_icon {
+    width: 10vw;
+    margin: 4vw;
+    background-color: black;
+    border-radius: 50px;
+    display: table;
+}
+.company_icon p {
+    display: block;
+    margin: auto;
+    color: white;
+    text-align: center;
+    font-weight: bolder;
+    font-size: 2.5rem;
+    padding: 1vw;
+}
+.stardust_icon {
+    padding: 2rem;
+    background-color: black;
+    border-radius: 50px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.consultancy_service_text {
+    width: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+}
+.others {
+    opacity: 0.5;
+    font-size: 1rem;
+    text-align: center;
+    margin: 1rem;
+}
+.others a {
+    color: currentColor;
+}
+
+/* clients: está más abajo, en la sección de subs*/
+
+/* contact button */
+.button_wrapper {
+    margin: 3rem;
+    text-align: center;
+}
+.contact_button {
+    position: relative;
+    font-size: 1rem;
+    text-transform: uppercase;
+    padding: 1rem 2.5rem;
+    display: inline-block;
+    border-radius: 50px;
+    border: none;
+    font-family: inherit;
+    background-color: white;
+    text-align: center;
+    transition: all 0.1s ease-in;
+}
+.contact_button a {
+   font-size: 1.5rem;
+   text-decoration: none;
+   color: black;
+   vertical-align: middle;
+}
+   
+.contact_button:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+}
+
+                                            /* SUBTITLES */
+/* intro y titulos */
+.intro_media {
+    margin-bottom: 1rem;
+}
+.intro_media img{
+    width: 100%;
+    opacity: 0.6;
+}
+.intro_media div {
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    margin-top: 4rem;
+    z-index: 2;
+}
+.intro_media_title {
+    font-family: 'PT Serif', serif;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: lighter;
+}
+.intro_media h2 {
+    font-size: 5rem;
+}
+.intro_media h3 {
+    font-size: 3rem;
+}
+.indiana_text p{
+    color: rgb(250, 250, 0);
+    position: relative;
+    margin-top: -10rem;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+/* info */
+/* languages */
+.subs_languages h2 {
+    font-family: 'PT Serif', serif;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 2.5rem;
+}
+.subs_languages_grid {
+    display: grid;
+    grid-template-areas: 
+    "eng_img spa_img por_img"
+    "eng_p spa_p por_p";
+    justify-content: center;
+    text-align: center;
+    column-gap: 2rem;
+}
+.subs_languages_grid p {
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    font-size: 4rem;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+    padding: 1rem;
+}
+.subs_languages_grid h6 {
+    font-size: 1rem;
+    font-weight: bolder;
+}
+.others {
+    opacity: 0.5;
+    font-size: 1rem;
+    text-align: center;
+    margin: 1rem;
+}
+.others a {
+    color: currentColor;
+}
+
+/* subs y cc */
+.subs_cc_grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+    "h2 h2"
+    "p p";
+    justify-content: space-evenly;
+    gap: 2rem;
+    margin: 2rem;
+    width: auto;
+}
+.subs_cc_grid h2 {
+    font-family: 'PT Serif', serif;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 1rem;
+    margin-top: 2.5rem;
+    background-color: black;
+    color: white;
+    font-size: 2.5rem;
+    border-radius: 20px;
+}
+.subs_cc_grid p {
+    width: 100%;
+    text-align: center;
+    padding: 0 2rem;
+}
+
+/* CLIENTS */
+.clients {
+    background-color: rgba(0, 0, 0, 0.8);
+    margin: 3rem;
+    padding: 2rem;
+    border-radius: 20px;
+
+}
+.clients h2 {
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: lighter;
+    margin-bottom: 2rem;
+    margin-top:0;
+    font-size: 2rem;
+}
+.clients p {
+    color: white;
+}
+.clients_img_wrapper {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 2rem;
+}
+.clients_img_wrapper img {
+    width: 12vw;
+    height: 12vw;
+    border-radius: 50px;
+}
+
+
+
+                                                /* CONTACT */
+/* dividir formulario entre form e img */
+main section.contact_wrapper {
+    display: flex;
+}
+.divider {
+    width: 50%;
+    margin: 2rem;
+}
+main #contact_us { /*titulo*/
+    text-align: center;
+    margin: 1.5rem;
+    font-size: 2rem;
+}
+main #lets_talk{
+    font-size: 1.25rem;
+    text-decoration: underline;
+}
+.divider img {
+    width: 100%;
+}
+.contact_form_wrapper div {
+    text-align: center;
+    margin: 1rem;
+    padding: 0.5rem;
+}
+input,select, textarea {
+    border-radius: 10px;
+    height: 2rem;
+    width: 80%;
+    text-align: center;
+    border-color: black;
+    border-width: 1px;
+    font-family: 'PT Serif', serif;
+    font-size: 1rem;
+}
+.contact_form_text_problem textarea {
+    height: 6rem;
+    vertical-align: text-top;
+    line-break: auto;
+    overflow: auto;
+    padding: 0.5rem;
+}
+/* boton submit */
+.submit_button input{
+    width: 8rem;
+    position: relative;
+    font-size: 1rem;
+    text-transform: uppercase;
+    border-radius: 50px;
+    border: none;
+    background-color: white;
+    text-align: center;
+    transition: all 0.1s ease-in;
+}
+.submit_button input:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+}
+
+/* mail y tel debajo de form */
+.main_mail_wrapper {
+    display: flex;
+    justify-content: space-around;
+}
+.main_mail_wrapper img {
+    width: 2rem;
+    vertical-align: middle;
+    font-size: 1rem;
+}
+.main_phone img {
+    height: 2rem;
+}
+.main_email img {
+    height: 1.5rem;
+}
+
+
+
+@media screen and (max-width:783px) {
 
     /* header y footer */
     header {
@@ -366,5 +692,59 @@ footer h2,h4 {
     .subs_cc_grid h2 {
         font-size: 1.5rem;
     }
+    .row {
+        flex-direction: column;
+    }
+    .services_button {
+        width: auto;
+    }
+    .info_services_button_wrapper {
+        margin-top: 0;
+    }
+    .arrow_icon svg {
+        transform: rotate(90deg);
+    }
+    .backround_img_wrapper h2 {
+        font-size: 1.5rem;
+    }
 }
-
+@media screen and (max-width:410px) {
+    /* centrado consultancy title */
+    .backround_img_wrapper h2 {
+        top: 35vh;
+    }
+    .down_arrow_wrapper {
+        top: 55vh;
+    }
+    /* achicado de boton */
+    .contact_button a {
+        font-size: 1rem;
+        text-decoration: none;
+        color: black;
+        vertical-align: middle;
+    }
+    /* centrado de  */
+    .logo_name_wrapper {
+        position: relative;
+        right: 1rem;
+    }
+    /* centrado subs title */
+    .intro_media div {
+        margin-top: 2rem;
+    }
+    .indiana_text {
+        display: none;
+    }
+    .intro_media_title h2{
+        font-size: 2rem;
+        text-align: center;
+    }
+    .intro_media_title h3{
+        font-size: 1rem;
+        text-align: center;
+    }
+    /* achicado texto subs */
+    .subs_cc_grid p {
+        font-size: 0.75rem;
+    }
+}
