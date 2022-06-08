@@ -247,21 +247,20 @@ footer h2,h4 {
 }
 .backround_img_wrapper h2 {
     z-index: 2;
-    position: absolute;
+    position: relative;
     font-size: 4rem;
     text-transform: uppercase;
     width: 100%;
     text-align: center;
-    top: 25vw;
+    bottom: 45vw;
     color: white;
-    padding: 2rem;
     font-weight: lighter;
 }
 .down_arrow_wrapper {
-    position: absolute;
+    position: relative;
     width: 100%;
     text-align: center;
-    top: 45vw;
+    bottom: 35vw;
 }
 .down_arrow {
     z-index: 2;
@@ -271,6 +270,7 @@ footer h2,h4 {
 /* grafico */
 .consultancy_service {
     padding: 4rem;
+    padding-top: 0;
 }
 .services_button img {
     width: 10vw;
@@ -709,12 +709,9 @@ input,select, textarea {
     }
 }
 @media screen and (max-width:410px) {
-    /* centrado consultancy title */
-    .backround_img_wrapper h2 {
-        top: 35vh;
-    }
+    /* sacar elemento en consultancy title */
     .down_arrow_wrapper {
-        top: 55vh;
+        display: none;
     }
     /* achicado de boton */
     .contact_button a {
