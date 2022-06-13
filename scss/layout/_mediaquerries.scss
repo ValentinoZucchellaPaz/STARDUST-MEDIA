@@ -1,0 +1,229 @@
+@media screen and (max-width:783px) {
+    // general
+    .row {
+        flex-direction: column;
+    }
+    /* header y footer */
+    header {
+        flex-wrap: wrap;
+        padding-bottom: 0;
+    }
+    footer {
+        flex-direction: column;
+        align-items: center;
+        
+        article {
+            width: 100%;
+        }
+        .footer_header {
+            margin-top: 2rem;
+        }
+        .footer_about_us {
+            div {
+                a{
+                    font-size: 0.75rem;
+                }
+            }
+        }
+        .datos {
+            margin-bottom: 1rem;
+        }
+    }
+    // centrado de menu hamburguesa
+    .navbar {
+        .container {
+            justify-content: flex-end;
+        }
+    }
+
+    /* index main */
+    .info {
+        .info_about_us {
+            p {
+                margin: 2rem 1rem;
+                font-size: 0.8rem;
+            }
+        }
+    }
+
+    /* contact */
+    main {
+        .contact_wrapper {
+            flex: none;
+            #divider_display_none_responsive {
+                display: none;
+            }
+            .divider {
+                width: 100%;
+                margin: auto;
+                .input-style {
+                    width: 50%;
+                }
+            }
+        }
+        
+        
+    }
+    
+    /* consultancy */
+    .backround_img_wrapper {
+        h2 {
+            font-size: 2.5rem;
+        }
+    }
+    .consultancy_service {
+        .services_button {
+            img {
+                border-radius: 0;
+                width: 20vh;
+            }
+        }
+        .stardust_icon {
+            border-radius: 25px;
+            .logo_name_wrapper {
+                margin: 1rem;
+                .logo_name_title {
+                    font-size: 1.5rem;
+                    width: 15vw;
+                }
+            }
+        }
+        .company_icon {
+            p{
+                font-size: 1.5rem;
+            }
+        }
+        .consultancy_service_text {
+            font-size: 1rem;
+        }
+    }
+    .arrow_icon svg {
+        transform: rotate(90deg);
+    }
+
+    /* subtitles */
+    .intro_media {
+        h2 {
+            font-size: 2.5rem;
+        }
+        h3 {
+            font-size: 1.5rem;
+        }
+        .indiana_text {
+            display: none;
+        }
+    }
+    .subs_languages {
+        h2 {
+            font-size: 1.5rem;
+        }
+        .subs_languages_grid {
+            width: 100%;
+            p {
+                font-size: 2rem;
+            }
+        }
+    }
+    .subs_cc {
+        .subs_cc_grid {
+            h2 {
+                font-size: 1.5rem;
+            }
+            p {
+                padding: 0.2rem;
+            }
+        }
+    }
+    .clients {
+        margin: 1rem;
+        padding: 1rem;
+    }
+
+    .services_button {
+        width: auto;
+    }
+    .info_services_button_wrapper {
+        margin-top: 0;
+    }
+    .backround_img_wrapper h2 {
+        font-size: 1.5rem;
+    }
+}
+@media screen and (max-width:410px) {
+    /* sacar elemento en consultancy title */
+    .down_arrow_wrapper {
+        display: none;
+    }
+    .stardust_icon {
+        .logo_name_wrapper {
+            margin: 1rem;
+            position: relative;
+            right:2rem;
+        }
+    }
+    /* achicado de boton */
+    .contact_button a {
+        font-size: 1rem;
+        text-decoration: none;
+        color: black;
+        vertical-align: middle;
+    }
+    /* centrado de logo en grafico de consultancy*/
+    .consultancy_service {
+        .info_services_button_wrapper {
+            .stardust_icon {
+                .logo_name_wrapper {
+                    position: relative;
+                    right: 2rem;
+                }
+            }
+        }
+    }
+    /* centrado subs title */
+    .intro_media div {
+        margin-top: 2rem;
+    }
+    .indiana_text {
+        display: none;
+    }
+    .intro_media_title h2{
+        font-size: 2rem;
+        text-align: center;
+    }
+    .intro_media_title h3{
+        font-size: 1rem;
+        text-align: center;
+    }
+    /* achicado texto subs */
+    .intro_media {
+        div {
+            h2 {
+                font-size: 2rem;
+            }
+            h3 {
+                font-size: 1rem;
+            }
+        }
+    }
+    .subs_cc_grid p {
+        font-size: 0.8rem;
+    }
+    // centrado de menu hamburguesa
+    .navbar {
+        .container {
+            justify-content: center;
+        }
+    }
+    // centrar img de final form contact us
+    main {
+        .contact_wrapper {
+            .divider {
+                form {
+                    .main_mail_wrapper {
+                        flex-direction: column;
+                    }
+                }
+            }
+        }
+    }
+}

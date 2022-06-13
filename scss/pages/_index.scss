@@ -1,0 +1,58 @@
+// INDEX
+.carousel {
+    // cambios en carrusel
+    .carousel-caption {
+        top: 1.25rem;
+    }
+    .carousel-inner {
+        height: 100%;
+    }
+}
+// services 
+.info {
+    .info_services {
+        // title
+        @include title;
+        // {} esteticas
+        // AGREGAR COSAS DE SASS A ESTA PARTE (MAP O MIXIN)
+        .info_services_lower_arrow,.info_services_upper_arrow {
+            @extend .arrow;
+        }
+        .info_services_upper_arrow {
+            img {
+                transform: rotate(180deg);
+            }
+        }
+        // imagenes
+        .info_services_button_wrapper {
+            margin: 20px auto;
+            width: 80%;
+            .info_services_link {
+                font-family: 'PT Serif', serif;
+                text-align: center;
+                font-size: 1rem;
+                text-decoration: none;
+                color: black;
+                text-transform: uppercase;
+                font-weight: bolder;
+                margin-top: 1rem;
+            }
+            .services_button {
+                width: 15vw;
+                margin: auto;
+                display: block;
+                text-align: center;
+            }
+        }
+    }
+    // about us texto
+    .info_about_us {
+        @include title;
+        p {
+            margin: 2rem 10rem;
+            text-align: justify;
+            letter-spacing: 1px;
+            line-height: 1.5;
+        }
+    }
+}

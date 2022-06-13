@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact us</title>
+    <meta name="keywords" content="movies producer consultancy content subtitle company Latino">
+    <meta name="description" content="Stardust Media is a content company that provides consultancy services, subtitles & CC creation and edition and it is also a movie producer. Consulted for OTT content aggregators and platforms.">
+    <title>Contact us | We will reach you</title>
+    <link rel="shortcut icon" type="image/x-icon" href="">
 <!-- link bootstrap -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 <!-- archivo css -->
     <!-- <link rel="stylesheet" href="css/responsive.css"> -->
-    <link rel="stylesheet" href="css/2dotpentrega.css">
+    <link rel="stylesheet" href="css/estilos.css">
 <!-- fuentes links -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -17,7 +20,9 @@
     <link rel="import" href="/coder/proyect/Amalfi.ttf">
 <!-- animaciones link -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    
 </head>
+
 <body>
     <header >
         <nav class="navbar navbar-expand-lg">
@@ -42,23 +47,24 @@
     </header>
 
     <main>
-        <h2 id="contact_us">CONTACT US</h2>
+        <h2 class="title">CONTACT US</h2>
         <section class="contact_wrapper">
             <div class="divider" id="divider_display_none_responsive">
                 <img src="imagenes/contacto.png" alt="decoration image">
             </div>
             <div class="divider">
                 <form action="">
-                    <h4 id="lets_talk">Let's talk</h4>
+                    <h4 class="title">Let's talk</h4>
                     <div class="contact_form_wrapper">
                         <div class="contact_form_text_name">
-                            <input type="text" name="name" id="" placeholder="Name">
+                            <input class="input-style" type="text" name="name" id="" placeholder="Name">
                         </div>
                         <div class="contact_form_text_last name">
-                            <input type="text" name="last name" id="" placeholder="Last name">
+                            <input class="input-style" type="text" name="last name" id="" placeholder="Last name">
                         </div>
                         <div class="contact_form_select_country">
-                            <select id="country" name="country">
+                            <!-- mantener cerrado para no incomodar lectura doc html -->
+                            <select class="input-style" id="country" name="country">
                                 <option value="select">Select Country</option>
                                 <option value="Afganistan">Afghanistan</option>
                                 <option value="Albania">Albania</option>
@@ -308,18 +314,17 @@
                                 <option value="Zimbabwe">Zimbabwe</option>
                             </select>
                         </div>
-                             <!-- mantener cerrado para no incomodar lectura doc html -->
                         <div class="contact_form_text_company">
-                            <input type="text" name="company" id="" placeholder="Company">
+                            <input class="input-style" type="text" name="company" id="" placeholder="Company">
                         </div>
                         <div class="contact_form_email">
-                            <input type="email" name="email" id="" placeholder="Mail">
+                            <input class="input-style" type="email" name="email" id="" placeholder="Mail">
                         </div>
                         <div class="contact_form_text_problem">
-                            <textarea name="problem" placeholder="What can we do for you?" ></textarea>
+                            <textarea class="input-style" name="problem" placeholder="What can we do for you?" ></textarea>
                         </div>
                         <div class="submit_button">
-                            <input type="submit" value="SUBMIT">
+                            <input class="input-style" type="submit" value="SUBMIT">
                         </div>
                         <div class="main_mail_wrapper">
                             <!-- mail y telefono, no form -->
@@ -338,8 +343,9 @@
     </main>
 
     <footer>
+        <!-- footer con logo, pequeño nav (about us), email y tel -->
         <article class="footer_header">
-                <div class="logo_name_footer_wrapper">
+                <div class="logo_name_wrapper">
                     <h2 id="inicio" class="logo_name_title"><a href="https://valentinozucchellapaz.github.io/coderhouse-proyect/index.html">Stardust Media</a></h2>
                     <h4 class="logo_name_subtitle"><a href="https://valentinozucchellapaz.github.io/coderhouse-proyect/index.html">A CONTENT COMPANY</a></h4>
                 </div>

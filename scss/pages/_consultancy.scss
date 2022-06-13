@@ -1,0 +1,109 @@
+// CONSULTANCY
+
+// titulo
+.backround_img_wrapper {
+    .backround_img {
+        width: 100%;
+        opacity: 0.1;
+        height: 50vw;
+    }
+    h2 {
+        z-index: 2;
+        position: relative;
+        font-size: 4rem;
+        text-transform: uppercase;
+        width: 100%;
+        text-align: center;
+        bottom: 45vw;
+        color: white;
+        font-weight: lighter;
+    }
+    .down_arrow_wrapper {
+        position: relative;
+        width: 100%;
+        text-align: center;
+        bottom: 35vw;
+        .down_arrow {
+            z-index: 2;
+            width: 10%;
+        }
+    }
+}
+// grafico
+.consultancy_service {
+    padding: 0 4rem;
+    .row {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .services_button {
+        text-align: center;
+        img {
+            width: 10vw;
+            margin: auto;
+            border-radius: 20px;
+        }
+    }
+    .arrow_icon{
+        width: auto;
+        margin: auto;
+    }
+    .company_icon {
+        width: 10vw;
+        margin: 4vw;
+        background-color: black;
+        border-radius: 50px;
+        display: table;
+        p {
+            display: block;
+            margin: auto;
+            color: white;
+            text-align: center;
+            font-weight: bolder;
+            font-size: 2.5rem;
+            padding: 1vw;
+        }
+    }
+    .stardust_icon {
+        padding: 2rem;
+        background-color: black;
+        border-radius: 50px;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @include logo;
+    }
+    .consultancy_service_text {
+        width: 100%;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+    @include others;
+}
+/* contact button */
+.button_wrapper {
+    margin: 3rem;
+    text-align: center;
+    .contact_button {
+        position: relative;
+        font-size: 1rem;
+        text-transform: uppercase;
+        padding: 1rem 2.5rem;
+        display: inline-block;
+        border-radius: 50px;
+        border: none;
+        font-family: inherit;
+        background-color: white;
+        text-align: center;
+        transition: all 0.1s ease-in;
+        @include hover (1.05, none);
+        a {
+            font-size: 1.5rem;
+            text-decoration: none;
+            color: black;
+            vertical-align: middle;
+         }
+    }
+}

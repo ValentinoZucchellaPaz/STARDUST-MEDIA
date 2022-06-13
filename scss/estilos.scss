@@ -1,0 +1,36 @@
+
+// STARDUST MEDIA
+// a content company
+
+// base
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'PT Serif', serif;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+@font-face {
+    font-family: Amalfi;
+    src: url(../Amalfi.ttf);
+}
+header, footer {
+    background-color: black;
+}
+
+// extends y mixins
+@import "../scss/abstract/extends&mixin";
+
+
+// pages
+@import "pages/index";
+@import "pages/subtitles";
+@import "pages/consultancy";
+@import "pages/contact";
+
+
+// layout
+@import "layout/header&footer";
+@import "layout/mediaquerries";

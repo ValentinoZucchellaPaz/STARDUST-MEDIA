@@ -1,0 +1,108 @@
+// HEADER
+
+header {
+    padding: 1rem;
+    align-items: center;
+    nav {
+        .container {
+            // logo header
+            @include logo;
+            // menu hamburguesa boton
+            .navbar-toggler {
+                background-color: rgba(255, 255, 255, 0.808);
+                padding: 0.5rem;
+            }
+            // menu
+            .navbar-collapse {
+                .menu_nav{
+                    padding: 1rem;
+                    font-size: 1rem;
+                    text-transform: uppercase;
+                    .nav-link{
+                        display: block;
+                        text-align: center;
+                        text-decoration: none;
+                        color: white;
+                        border-radius: 30px;
+                        margin: 0.7rem;
+                        padding: 0.7rem;
+                        @include hover;
+                        @include clic ($theme-oscuro, $theme-claro);
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+// FOOTER
+footer {
+    display: flex;
+    article {
+        width: 33%;
+        h2,h4 {
+            text-align: center;
+        }
+    }
+    // title
+    .footer_header {
+        display: block;
+        margin: auto;
+        @include logo;
+    }
+    // about us
+    .footer_about_us {
+        text-align: center;
+        color: white; 
+        margin-top: 1.25rem;
+        margin-bottom: 1rem; 
+        line-height: 1.25;
+        h3{
+            margin-bottom: 0.25rem;
+            text-transform: uppercase;
+            font-weight: lighter;
+            letter-spacing: 2px;
+            font-size: 1.25rem;
+            display: inline-block;
+            position: relative;
+        }
+        div {
+            margin: 0.75rem;
+            border-left: 5px white;
+            display: flex;
+            flex-direction: column;
+            a {
+                margin-top: 0.5rem;
+                text-decoration: none;
+                color: white;
+                font-size: 1rem;
+                font-weight: lighter;
+                font-family: 'PT Serif', serif;
+                text-align: center;
+                text-transform: uppercase;
+                transition:all 0.1s ease-in;
+                @include hover (1.03, none, none);
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+    // contact us
+    .datos {
+        color: white;
+        div {
+            margin-top: 1.5rem;
+            text-align: center;
+            img {
+                text-align: center;
+                vertical-align: middle;
+                width: 2rem;
+                margin-right: 0.5rem;
+            }
+        }
+    }
+}

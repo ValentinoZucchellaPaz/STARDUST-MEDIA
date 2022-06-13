@@ -1,0 +1,85 @@
+// CONTACT
+/* dividir formulario entre form e img */
+main {
+    @include title;
+    .contact_wrapper {
+        display: flex;
+        .divider {
+            width: 50%;
+            margin: 2rem;
+            img {
+                width: 100%;
+            }
+            form {
+                .title {
+                    font-size: 1.25rem;
+                    text-transform: inherit;
+                }
+                .contact_form_wrapper {
+                    div {
+                        text-align: center;
+                        margin: 1rem;
+                        padding: 0.5rem;
+                    }
+                }
+                .input-style {
+                    border-radius: 10px;
+                    height: 2rem;
+                    width: 80%;
+                    text-align: center;
+                    border-color: black;
+                    border-width: 1px;
+                    font-family: 'PT Serif', serif;
+                    font-size: 1rem;
+                }
+                .contact_form_text_problem {
+                    textarea {
+                        height: 6rem;
+                        vertical-align: text-top;
+                        line-break: auto;
+                        overflow: auto;
+                        padding: 0.5rem;
+                    }
+                }
+                .submit_button {
+                    input{
+                        /* boton submit */
+                        width: 8rem;
+                        position: relative;
+                        font-size: 1rem;
+                        text-transform: uppercase;
+                        border-radius: 50px;
+                        border: none;
+                        background-color: white;
+                        text-align: center;
+                        transition: all 0.1s ease-in;
+                        &:hover {
+                            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+                            transform: scale(1.05);
+                        }
+                    }
+                }
+                .main_mail_wrapper { /* mail y tel debajo de form */
+                    display: flex;
+                    justify-content: space-around;
+                    img {
+                        width: 2rem;
+                        vertical-align: middle;
+                        font-size: 1rem;
+                    }
+                    .main_phone {
+                        img {
+                            height: 2rem;
+                        }
+                    }
+                    .main_email {
+                        img {
+                            height: 1.5rem;
+                        }
+                    }
+                }
+                
+            }
+        }
+    }
+}

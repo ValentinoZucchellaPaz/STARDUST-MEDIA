@@ -1,0 +1,84 @@
+.arrow {
+    width: 100%;
+    position: relative;
+    text-align: center;
+    margin-top: 1rem;
+    img {
+        width: 75%;
+        height: 6rem;
+    }
+}
+@mixin logo {
+    .logo_name_wrapper{
+        color: white;
+        text-align: center;
+        margin-top: 1rem;
+        margin: auto;
+        @include hover (1.03, none, none);
+        @include clic;
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        .logo_name_title{
+            font-family: Amalfi;
+            font-size: 2rem;
+            font-weight: bold;
+        }
+        .logo_name_subtitle {
+            font-family: 'PT Serif', serif;
+            font-weight: lighter;
+            font-size: 0.8rem;
+            letter-spacing: 2px;
+        }
+    }
+}
+@mixin link-color{
+    a {
+        color: currentColor;
+    }
+    a:hover {
+        color: currentColor;
+    }
+}
+@mixin others {
+    .others {
+        opacity: 0.5;
+        font-size: 1rem;
+        text-align: center;
+        margin: 1rem;
+        @include link-color;
+        @include hover(1.03, none, none);
+    }
+}
+@mixin title {
+    .title {
+        text-align: center;
+        margin: 1rem;
+        margin-top: 2.5rem;
+        text-transform: uppercase;
+        font-weight: lighter;
+    }
+    
+}
+
+$theme-claro: rgba(255, 255, 255, 0.8);
+$theme-oscuro: rgba(0, 0, 0, 0.8);
+@mixin clic ($color:$theme-claro, $back:none) {
+    transition: all 0.1s ease-in;
+    &:active {
+        transform: scale(0.8);
+        color: $color;
+        background-color: $back;
+    }
+}
+
+@mixin hover ($scale:1.1, $bg-color:rgb(66, 66, 66), $shadow: 0 10px 20px rgba(255, 255, 255, 0.205)){
+    transition: all 0.1s ease-in;
+    &:hover {
+        border-radius: 30px;
+        transform: scale($scale);
+        background-color: $bg-color; 
+        box-shadow: $shadow;
+    }
+}
