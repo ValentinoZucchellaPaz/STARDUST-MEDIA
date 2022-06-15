@@ -29,6 +29,13 @@ header, footer {
 .carousel .carousel-inner {
   height: 100%; }
 
+.carousel .carousel-control-prev .carousel-control-prev-icon {
+  transition: all 0.1s ease-in; }
+  .carousel .carousel-control-prev .carousel-control-prev-icon:active {
+    transform: scale(0.8);
+    color: rgba(255, 255, 255, 0.8);
+    background-color: none; }
+
 .info .info_services .title {
   text-align: center;
   margin: 1rem;
@@ -50,12 +57,21 @@ header, footer {
     color: black;
     text-transform: uppercase;
     font-weight: bolder;
-    margin-top: 1rem; }
+    margin-top: 1rem;
+    transition: all 0.1s ease-in; }
+    .info .info_services .info_services_button_wrapper .info_services_link:hover {
+      border-radius: 30px;
+      transform: scale(1.05);
+      background-color: none;
+      box-shadow: currentColor; }
   .info .info_services .info_services_button_wrapper .services_button {
     width: 15vw;
     margin: auto;
     display: block;
     text-align: center; }
+    .info .info_services .info_services_button_wrapper .services_button:hover {
+      transition: all 0.1s ease-in;
+      transform: scale(1.05); }
 
 .info .info_about_us .title {
   text-align: center;
@@ -136,6 +152,7 @@ header, footer {
   font-size: 1rem;
   text-align: center;
   margin: 1rem;
+  transition: all 0.1s ease-in;
   transition: all 0.1s ease-in; }
   .subs_languages .others a {
     color: currentColor; }
@@ -146,6 +163,10 @@ header, footer {
     transform: scale(1.03);
     background-color: none;
     box-shadow: none; }
+  .subs_languages .others:active {
+    transform: scale(0.8);
+    color: currentColor;
+    background-color: none; }
 
 /* subs y cc */
 .subs_cc .subs_cc_grid {
@@ -172,6 +193,7 @@ header, footer {
   font-size: 1rem;
   text-align: center;
   margin: 1rem;
+  transition: all 0.1s ease-in;
   transition: all 0.1s ease-in; }
   .subs_cc .others a {
     color: currentColor; }
@@ -182,6 +204,10 @@ header, footer {
     transform: scale(1.03);
     background-color: none;
     box-shadow: none; }
+  .subs_cc .others:active {
+    transform: scale(0.8);
+    color: currentColor;
+    background-color: none; }
 
 .clients {
   background-color: rgba(0, 0, 0, 0.8);
@@ -231,7 +257,18 @@ header, footer {
   bottom: 35vw; }
   .backround_img_wrapper .down_arrow_wrapper .down_arrow {
     z-index: 2;
-    width: 10%; }
+    width: 10%;
+    transition: all 0.1s ease-in;
+    transition: all 0.1s ease-in; }
+    .backround_img_wrapper .down_arrow_wrapper .down_arrow:hover {
+      border-radius: 30px;
+      transform: scale(1.1);
+      background-color: none;
+      box-shadow: none; }
+    .backround_img_wrapper .down_arrow_wrapper .down_arrow:active {
+      transform: scale(0.8);
+      color: rgba(255, 255, 255, 0.8);
+      background-color: none; }
 
 .consultancy_service {
   padding: 0 4rem; }
@@ -307,6 +344,7 @@ header, footer {
     font-size: 1rem;
     text-align: center;
     margin: 1rem;
+    transition: all 0.1s ease-in;
     transition: all 0.1s ease-in; }
     .consultancy_service .others a {
       color: currentColor; }
@@ -317,12 +355,17 @@ header, footer {
       transform: scale(1.03);
       background-color: none;
       box-shadow: none; }
+    .consultancy_service .others:active {
+      transform: scale(0.8);
+      color: currentColor;
+      background-color: none; }
 
 /* contact button */
 .button_wrapper {
   margin: 3rem;
   text-align: center; }
   .button_wrapper .contact_button {
+    transition: all 0.1s ease-in;
     position: relative;
     font-size: 1rem;
     text-transform: uppercase;
@@ -340,6 +383,12 @@ header, footer {
       transform: scale(1.05);
       background-color: none;
       box-shadow: 0 10px 20px rgba(255, 255, 255, 0.205); }
+    .button_wrapper .contact_button:hover {
+      border-radius: 50px; }
+    .button_wrapper .contact_button:active {
+      transform: scale(0.8);
+      color: rgba(255, 255, 255, 0.8);
+      background-color: none; }
     .button_wrapper .contact_button a {
       font-size: 1.5rem;
       text-decoration: none;
@@ -377,26 +426,39 @@ main .contact_wrapper {
       border-width: 1px;
       font-family: 'PT Serif', serif;
       font-size: 1rem; }
+      main .contact_wrapper .divider form .input-style:focus {
+        transition: all 0.1s ease-in;
+        transform: scale(1.05);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); }
     main .contact_wrapper .divider form .contact_form_text_problem textarea {
       height: 6rem;
       vertical-align: text-top;
       line-break: auto;
       overflow: auto;
       padding: 0.5rem; }
-    main .contact_wrapper .divider form .submit_button input {
-      /* boton submit */
-      width: 8rem;
-      position: relative;
-      font-size: 1rem;
-      text-transform: uppercase;
-      border-radius: 50px;
-      border: none;
-      background-color: white;
-      text-align: center;
+    main .contact_wrapper .divider form .submit_button {
       transition: all 0.1s ease-in; }
-      main .contact_wrapper .divider form .submit_button input:hover {
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-        transform: scale(1.05); }
+      main .contact_wrapper .divider form .submit_button:active {
+        transform: scale(0.8);
+        color: currentColor;
+        background-color: none; }
+      main .contact_wrapper .divider form .submit_button input {
+        /* boton submit */
+        width: 8rem;
+        position: relative;
+        font-size: 1rem;
+        text-transform: uppercase;
+        border-radius: 50px;
+        border: none;
+        background-color: white;
+        text-align: center;
+        transition: all 0.1s ease-in;
+        transition: all 0.1s ease-in; }
+        main .contact_wrapper .divider form .submit_button input:hover {
+          border-radius: 30px;
+          transform: scale(1.05);
+          background-color: none;
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); }
     main .contact_wrapper .divider form .main_mail_wrapper {
       /* mail y tel debajo de form */
       display: flex;
@@ -413,60 +475,68 @@ main .contact_wrapper {
 header {
   padding: 1rem;
   align-items: center; }
-  header nav .container .logo_name_wrapper {
-    color: white;
-    text-align: center;
-    margin-top: 1rem;
-    margin: auto;
-    transition: all 0.1s ease-in;
-    transition: all 0.1s ease-in; }
-    header nav .container .logo_name_wrapper:hover {
-      border-radius: 30px;
-      transform: scale(1.03);
-      background-color: none;
-      box-shadow: none; }
-    header nav .container .logo_name_wrapper:active {
-      transform: scale(0.8);
-      color: rgba(255, 255, 255, 0.8);
-      background-color: none; }
-    header nav .container .logo_name_wrapper a {
-      text-decoration: none;
-      color: white; }
-    header nav .container .logo_name_wrapper .logo_name_title {
-      font-family: Amalfi;
-      font-size: 2rem;
-      font-weight: bold; }
-    header nav .container .logo_name_wrapper .logo_name_subtitle {
-      font-family: 'PT Serif', serif;
-      font-weight: lighter;
-      font-size: 0.8rem;
-      letter-spacing: 2px; }
-  header nav .container .navbar-toggler {
-    background-color: rgba(255, 255, 255, 0.808);
-    padding: 0.5rem; }
-  header nav .container .navbar-collapse .menu_nav {
-    padding: 1rem;
-    font-size: 1rem;
-    text-transform: uppercase; }
-    header nav .container .navbar-collapse .menu_nav .nav-link {
-      display: block;
-      text-align: center;
-      text-decoration: none;
+  header nav {
+    margin-top: 1rem; }
+    header nav .container .logo_name_wrapper {
       color: white;
-      border-radius: 30px;
-      margin: 0.7rem;
-      padding: 0.7rem;
+      text-align: center;
+      margin-top: 1rem;
+      margin: auto;
       transition: all 0.1s ease-in;
       transition: all 0.1s ease-in; }
-      header nav .container .navbar-collapse .menu_nav .nav-link:hover {
+      header nav .container .logo_name_wrapper:hover {
         border-radius: 30px;
-        transform: scale(1.1);
-        background-color: #424242;
-        box-shadow: 0 10px 20px rgba(255, 255, 255, 0.205); }
-      header nav .container .navbar-collapse .menu_nav .nav-link:active {
+        transform: scale(1.03);
+        background-color: none;
+        box-shadow: none; }
+      header nav .container .logo_name_wrapper:active {
         transform: scale(0.8);
-        color: rgba(0, 0, 0, 0.8);
-        background-color: rgba(255, 255, 255, 0.8); }
+        color: rgba(255, 255, 255, 0.8);
+        background-color: none; }
+      header nav .container .logo_name_wrapper a {
+        text-decoration: none;
+        color: white; }
+      header nav .container .logo_name_wrapper .logo_name_title {
+        font-family: Amalfi;
+        font-size: 2rem;
+        font-weight: bold; }
+      header nav .container .logo_name_wrapper .logo_name_subtitle {
+        font-family: 'PT Serif', serif;
+        font-weight: lighter;
+        font-size: 0.8rem;
+        letter-spacing: 2px; }
+    header nav .container .navbar-toggler {
+      padding: 0.5rem;
+      border-radius: 50%;
+      margin-bottom: 1rem;
+      transition: all 0.1s ease-in; }
+      header nav .container .navbar-toggler:active {
+        transform: scale(0.8);
+        color: currentColor;
+        background-color: none; }
+    header nav .container .navbar-collapse .menu_nav {
+      padding: 1rem;
+      font-size: 1rem;
+      text-transform: uppercase; }
+      header nav .container .navbar-collapse .menu_nav .nav-link {
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        color: white;
+        border-radius: 30px;
+        margin: 0.7rem;
+        padding: 0.7rem;
+        transition: all 0.1s ease-in;
+        transition: all 0.1s ease-in; }
+        header nav .container .navbar-collapse .menu_nav .nav-link:hover {
+          border-radius: 30px;
+          transform: scale(1.1);
+          background-color: #424242;
+          box-shadow: 0 10px 20px rgba(255, 255, 255, 0.205); }
+        header nav .container .navbar-collapse .menu_nav .nav-link:active {
+          transform: scale(0.8);
+          color: rgba(0, 0, 0, 0.8);
+          background-color: rgba(255, 255, 255, 0.8); }
 
 footer {
   display: flex; }
@@ -534,6 +604,7 @@ footer {
         text-align: center;
         text-transform: uppercase;
         transition: all 0.1s ease-in;
+        transition: all 0.1s ease-in;
         transition: all 0.1s ease-in; }
         footer .footer_about_us div a:hover {
           border-radius: 30px;
@@ -542,6 +613,10 @@ footer {
           box-shadow: none; }
         footer .footer_about_us div a:hover {
           text-decoration: underline; }
+        footer .footer_about_us div a:active {
+          transform: scale(0.8);
+          color: currentColor;
+          background-color: none; }
   footer .datos {
     color: white; }
     footer .datos div {

@@ -7,6 +7,11 @@
     .carousel-inner {
         height: 100%;
     }
+    .carousel-control-prev{
+        .carousel-control-prev-icon{
+            @include clic;
+        }
+    }
 }
 // services 
 .info {
@@ -36,12 +41,17 @@
                 text-transform: uppercase;
                 font-weight: bolder;
                 margin-top: 1rem;
+                @include hover (1.05, none, currentColor)
             }
             .services_button {
                 width: 15vw;
                 margin: auto;
                 display: block;
                 text-align: center;
+                &:hover {
+                    transition: all 0.1s ease-in;
+                    transform: scale(1.05);
+                }
             }
         }
     }

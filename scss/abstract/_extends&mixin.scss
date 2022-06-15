@@ -49,6 +49,7 @@
         margin: 1rem;
         @include link-color;
         @include hover(1.03, none, none);
+        @include clic(currentColor);
     }
 }
 @mixin title {
@@ -64,10 +65,10 @@
 
 $theme-claro: rgba(255, 255, 255, 0.8);
 $theme-oscuro: rgba(0, 0, 0, 0.8);
-@mixin clic ($color:$theme-claro, $back:none) {
+@mixin clic ($color:$theme-claro, $back:none, $scale: (0.8)) {
     transition: all 0.1s ease-in;
     &:active {
-        transform: scale(0.8);
+        transform: scale($scale);
         color: $color;
         background-color: $back;
     }

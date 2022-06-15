@@ -26,6 +26,8 @@
         .down_arrow {
             z-index: 2;
             width: 10%;
+            @include hover (1.1, none, none);
+            @include clic;
         }
     }
 }
@@ -87,18 +89,23 @@
     margin: 3rem;
     text-align: center;
     .contact_button {
+        @include hover (1.05, none);
         position: relative;
         font-size: 1rem;
         text-transform: uppercase;
         padding: 1rem 2.5rem;
         display: inline-block;
         border-radius: 50px;
+        &:hover{
+            border-radius: 50px;
+        }
+        // para pisar border radios de include hover y que no cambie con el hover
         border: none;
         font-family: inherit;
         background-color: white;
         text-align: center;
         transition: all 0.1s ease-in;
-        @include hover (1.05, none);
+        @include clic;
         a {
             font-size: 1.5rem;
             text-decoration: none;

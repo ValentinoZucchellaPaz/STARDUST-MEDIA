@@ -31,6 +31,11 @@ main {
                     border-width: 1px;
                     font-family: 'PT Serif', serif;
                     font-size: 1rem;
+                    &:focus {
+                        transition: all 0.1s ease-in;
+                        transform: scale(1.05);
+                        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+                    }
                 }
                 .contact_form_text_problem {
                     textarea {
@@ -42,6 +47,7 @@ main {
                     }
                 }
                 .submit_button {
+                    @include clic (currentColor);
                     input{
                         /* boton submit */
                         width: 8rem;
@@ -53,10 +59,8 @@ main {
                         background-color: white;
                         text-align: center;
                         transition: all 0.1s ease-in;
-                        &:hover {
-                            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-                            transform: scale(1.05);
-                        }
+                        @include hover (1.05, none, 0 10px 20px rgba(0, 0, 0, 0.2));
+                        
                     }
                 }
                 .main_mail_wrapper { /* mail y tel debajo de form */
