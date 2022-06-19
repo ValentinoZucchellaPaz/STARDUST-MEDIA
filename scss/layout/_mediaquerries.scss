@@ -148,6 +148,11 @@
     .backround_img_wrapper h2 {
         font-size: 1.5rem;
     }
+    .movie{
+        .movie_info {
+            flex-direction: column;
+        }
+    }
 }
 @media screen and (max-width:410px) {
     /* sacar elemento en consultancy title */
@@ -226,4 +231,37 @@
             }
         }
     }
+    // cosas de adultos
+    .info {
+        .info_services {
+            .info_services_title {
+                .logo_name_wrapper {
+                    background-color: inherit;
+                    padding: 1rem;
+                    width: 100%;
+                    &:active {
+                        border: none;
+                    }
+                }
+                p,h2 {
+                    color: black;
+                    font-size: smaller;
+                }
+                h2 {
+                    font-size: 0.8rem;
+                }
+            }
+        }
+    }
+    .movie{
+        .movie_info {
+            .movie_info_picture {
+                img {
+                    width: 10rem;
+                }
+            }
+        }
+    }
+
+    
 }

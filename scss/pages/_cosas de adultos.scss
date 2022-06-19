@@ -1,0 +1,75 @@
+.info {
+    // mas codigo sobre esto en index
+    .info_services {
+        .info_services_title {
+            @include logo;
+            margin: 2rem auto;
+            .logo_name_wrapper {
+                width: 25rem;
+                padding: 5rem;
+                margin: auto;
+                background-color: black;
+                border-radius: 50%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                &:hover {
+                    border-radius: 50%;
+                }
+            }
+            p {
+                text-align: center;
+                margin-top: 1rem;
+                display: inline;
+            }
+        }
+    }
+}
+.movie {
+    margin-top: 2rem;
+    .movie_info {
+        margin: 1rem;
+        padding: 1rem;
+        display: flex;
+        flex-direction: row;
+        @include hover (1.01, rgb(66, 66, 66), none);
+        &:hover {
+            border: white 2px inset;
+            color: black;
+        }
+        .movie_info_title {
+            @include title;
+            .title {
+                margin-top: 0;
+
+            }
+            @include others;
+        }
+        .movie_info_text {
+            h2, p {
+                text-align: center;
+                margin: auto;
+            }
+            .others {
+                font-size: 0.8rem;
+            }
+            .sinopsis {
+                padding: 1rem;
+            }
+        }
+        .movie_info_picture{
+            margin: auto;
+            img {
+                width: 15rem;
+            }
+        }
+    }
+    .movie_trailer {
+        video {
+            width: 100%;
+            height: 70%;
+        }
+        @include others;
+    }
+}

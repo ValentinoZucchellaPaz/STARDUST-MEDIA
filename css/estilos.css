@@ -29,13 +29,6 @@ header, footer {
 .carousel .carousel-inner {
   height: 100%; }
 
-.carousel .carousel-control-prev .carousel-control-prev-icon {
-  transition: all 0.1s ease-in; }
-  .carousel .carousel-control-prev .carousel-control-prev-icon:active {
-    transform: scale(0.8);
-    color: rgba(255, 255, 255, 0.8);
-    background-color: none; }
-
 .info .info_services .title {
   text-align: center;
   margin: 1rem;
@@ -472,6 +465,132 @@ main .contact_wrapper {
       main .contact_wrapper .divider form .main_mail_wrapper .main_email img {
         height: 1.5rem; }
 
+.info .info_services .info_services_title {
+  margin: 2rem auto; }
+  .info .info_services .info_services_title .logo_name_wrapper {
+    color: white;
+    text-align: center;
+    margin-top: 1rem;
+    margin: auto;
+    transition: all 0.1s ease-in;
+    transition: all 0.1s ease-in; }
+    .info .info_services .info_services_title .logo_name_wrapper:hover {
+      border-radius: 30px;
+      transform: scale(1.03);
+      background-color: none;
+      box-shadow: none; }
+    .info .info_services .info_services_title .logo_name_wrapper:active {
+      transform: scale(0.8);
+      color: rgba(255, 255, 255, 0.8);
+      background-color: none; }
+    .info .info_services .info_services_title .logo_name_wrapper a {
+      text-decoration: none;
+      color: white; }
+    .info .info_services .info_services_title .logo_name_wrapper .logo_name_title {
+      font-family: Amalfi;
+      font-size: 2rem;
+      font-weight: bold; }
+    .info .info_services .info_services_title .logo_name_wrapper .logo_name_subtitle {
+      font-family: 'PT Serif', serif;
+      font-weight: lighter;
+      font-size: 0.8rem;
+      letter-spacing: 2px; }
+  .info .info_services .info_services_title .logo_name_wrapper {
+    width: 25rem;
+    padding: 5rem;
+    margin: auto;
+    background-color: black;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .info .info_services .info_services_title .logo_name_wrapper:hover {
+      border-radius: 50%; }
+  .info .info_services .info_services_title p {
+    text-align: center;
+    margin-top: 1rem;
+    display: inline; }
+
+.movie {
+  margin-top: 2rem; }
+  .movie .movie_info {
+    margin: 1rem;
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    transition: all 0.1s ease-in; }
+    .movie .movie_info:hover {
+      border-radius: 30px;
+      transform: scale(1.01);
+      background-color: #424242;
+      box-shadow: none; }
+    .movie .movie_info:hover {
+      border: white 2px inset;
+      color: black; }
+    .movie .movie_info .movie_info_title .title {
+      text-align: center;
+      margin: 1rem;
+      margin-top: 2.5rem;
+      text-transform: uppercase;
+      font-weight: lighter; }
+    .movie .movie_info .movie_info_title .title {
+      margin-top: 0; }
+    .movie .movie_info .movie_info_title .others {
+      opacity: 0.5;
+      font-size: 1rem;
+      text-align: center;
+      margin: 1rem;
+      transition: all 0.1s ease-in;
+      transition: all 0.1s ease-in; }
+      .movie .movie_info .movie_info_title .others a {
+        color: currentColor; }
+      .movie .movie_info .movie_info_title .others a:hover {
+        color: currentColor; }
+      .movie .movie_info .movie_info_title .others:hover {
+        border-radius: 30px;
+        transform: scale(1.03);
+        background-color: none;
+        box-shadow: none; }
+      .movie .movie_info .movie_info_title .others:active {
+        transform: scale(0.8);
+        color: currentColor;
+        background-color: none; }
+    .movie .movie_info .movie_info_text h2, .movie .movie_info .movie_info_text p {
+      text-align: center;
+      margin: auto; }
+    .movie .movie_info .movie_info_text .others {
+      font-size: 0.8rem; }
+    .movie .movie_info .movie_info_text .sinopsis {
+      padding: 1rem; }
+    .movie .movie_info .movie_info_picture {
+      margin: auto; }
+      .movie .movie_info .movie_info_picture img {
+        width: 15rem; }
+  .movie .movie_trailer video {
+    width: 100%;
+    height: 70%; }
+  .movie .movie_trailer .others {
+    opacity: 0.5;
+    font-size: 1rem;
+    text-align: center;
+    margin: 1rem;
+    transition: all 0.1s ease-in;
+    transition: all 0.1s ease-in; }
+    .movie .movie_trailer .others a {
+      color: currentColor; }
+    .movie .movie_trailer .others a:hover {
+      color: currentColor; }
+    .movie .movie_trailer .others:hover {
+      border-radius: 30px;
+      transform: scale(1.03);
+      background-color: none;
+      box-shadow: none; }
+    .movie .movie_trailer .others:active {
+      transform: scale(0.8);
+      color: currentColor;
+      background-color: none; }
+
 header {
   padding: 1rem;
   align-items: center; }
@@ -706,7 +825,9 @@ footer {
   .info_services_button_wrapper {
     margin-top: 0; }
   .backround_img_wrapper h2 {
-    font-size: 1.5rem; } }
+    font-size: 1.5rem; }
+  .movie .movie_info {
+    flex-direction: column; } }
 
 @media screen and (max-width: 410px) {
   /* sacar elemento en consultancy title */
@@ -747,4 +868,17 @@ footer {
   .navbar .container {
     justify-content: center; }
   main .contact_wrapper .divider form .main_mail_wrapper {
-    flex-direction: column; } }
+    flex-direction: column; }
+  .info .info_services .info_services_title .logo_name_wrapper {
+    background-color: inherit;
+    padding: 1rem;
+    width: 100%; }
+    .info .info_services .info_services_title .logo_name_wrapper:active {
+      border: none; }
+  .info .info_services .info_services_title p, .info .info_services .info_services_title h2 {
+    color: black;
+    font-size: smaller; }
+  .info .info_services .info_services_title h2 {
+    font-size: 0.8rem; }
+  .movie .movie_info .movie_info_picture img {
+    width: 10rem; } }
