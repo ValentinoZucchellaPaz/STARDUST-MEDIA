@@ -33,7 +33,7 @@
         padding: 1rem;
         display: flex;
         flex-direction: row;
-        @include hover (1.01, rgb(66, 66, 66), none);
+        @include hover (1.01, rgb(90, 90, 90), none);
         &:hover {
             border: white 2px inset;
             color: black;
@@ -67,8 +67,16 @@
     }
     .movie_trailer {
         video {
-            width: 100%;
+            display: block;
+            margin: auto;
+            width: 90%;
             height: 70%;
+            border-radius: 5px;
+            &:hover {
+                transition: all 0.1s ease-in;
+                border: white 2px solid;
+                border-radius: 10px;
+            }
         }
         @include others;
     }

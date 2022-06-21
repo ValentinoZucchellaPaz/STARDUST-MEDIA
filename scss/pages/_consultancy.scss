@@ -99,7 +99,7 @@
         &:hover{
             border-radius: 50px;
         }
-        // para pisar border radios de include hover y que no cambie con el hover
+        // para pisar border-radius de "@include hover" y que no cambie con el hover
         border: none;
         font-family: inherit;
         background-color: white;
@@ -114,3 +114,5 @@
          }
     }
 }
+
+// cambio ligero entre clients de consultancy y subs, sacar border radius
