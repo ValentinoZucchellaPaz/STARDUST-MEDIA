@@ -265,7 +265,8 @@ header, footer {
       background-color: none; }
 
 .consultancy_service {
-  padding: 0 4rem; }
+  padding: 0 4rem;
+  margin-top: -10rem; }
   .consultancy_service .row {
     display: flex;
     align-items: center;
@@ -303,7 +304,7 @@ header, footer {
     .consultancy_service .stardust_icon .logo_name_wrapper {
       color: white;
       text-align: center;
-      margin-top: 1rem;
+      padding-top: 1rem;
       margin: auto;
       transition: all 0.1s ease-in;
       transition: all 0.1s ease-in; }
@@ -327,7 +328,8 @@ header, footer {
         font-family: 'PT Serif', serif;
         font-weight: lighter;
         font-size: 0.8rem;
-        letter-spacing: 2px; }
+        letter-spacing: 2px;
+        text-transform: uppercase; }
   .consultancy_service .consultancy_service_text {
     width: 100%;
     text-align: center;
@@ -406,10 +408,18 @@ main .contact_wrapper {
     main .contact_wrapper .divider form .title {
       font-size: 1.25rem;
       text-transform: inherit; }
-    main .contact_wrapper .divider form .contact_form_wrapper div {
-      text-align: center;
-      margin: 1rem;
-      padding: 0.5rem; }
+    main .contact_wrapper .divider form .contact_form_wrapper {
+      text-align: center; }
+      main .contact_wrapper .divider form .contact_form_wrapper input, main .contact_wrapper .divider form .contact_form_wrapper select, main .contact_wrapper .divider form .contact_form_wrapper textarea {
+        width: 80%;
+        height: 2.5rem;
+        margin: 1rem auto;
+        padding: 0.5rem; }
+      main .contact_wrapper .divider form .contact_form_wrapper textarea {
+        height: 6rem;
+        vertical-align: text-top;
+        line-break: auto;
+        overflow: auto; }
     main .contact_wrapper .divider form .input-style {
       border-radius: 10px;
       height: 2rem;
@@ -423,54 +433,47 @@ main .contact_wrapper {
         transition: all 0.1s ease-in;
         transform: scale(1.05);
         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); }
-    main .contact_wrapper .divider form .contact_form_text_problem textarea {
-      height: 6rem;
-      vertical-align: text-top;
-      line-break: auto;
-      overflow: auto;
-      padding: 0.5rem; }
-    main .contact_wrapper .divider form .submit_button {
+    main .contact_wrapper .divider button {
+      transition: all 0.1s ease-in;
+      /* boton submit */
+      width: 8rem;
+      position: relative;
+      font-size: 1rem;
+      text-transform: uppercase;
+      border-radius: 50px;
+      border: none;
+      background-color: white;
+      text-align: center;
+      transition: all 0.1s ease-in;
       transition: all 0.1s ease-in; }
-      main .contact_wrapper .divider form .submit_button:active {
+      main .contact_wrapper .divider button:active {
         transform: scale(0.8);
         color: currentColor;
         background-color: none; }
-      main .contact_wrapper .divider form .submit_button input {
-        /* boton submit */
-        width: 8rem;
-        position: relative;
-        font-size: 1rem;
-        text-transform: uppercase;
-        border-radius: 50px;
-        border: none;
-        background-color: white;
-        text-align: center;
-        transition: all 0.1s ease-in;
-        transition: all 0.1s ease-in; }
-        main .contact_wrapper .divider form .submit_button input:hover {
-          border-radius: 30px;
-          transform: scale(1.05);
-          background-color: none;
-          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); }
-    main .contact_wrapper .divider form .main_mail_wrapper {
+      main .contact_wrapper .divider button:hover {
+        border-radius: 30px;
+        transform: scale(1.05);
+        background-color: none;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); }
+    main .contact_wrapper .divider .main_mail_wrapper {
       /* mail y tel debajo de form */
       display: flex;
       justify-content: space-around; }
-      main .contact_wrapper .divider form .main_mail_wrapper img {
+      main .contact_wrapper .divider .main_mail_wrapper img {
         width: 2rem;
         vertical-align: middle;
         font-size: 1rem; }
-      main .contact_wrapper .divider form .main_mail_wrapper .main_phone img {
+      main .contact_wrapper .divider .main_mail_wrapper .main_phone img {
         height: 2rem; }
-      main .contact_wrapper .divider form .main_mail_wrapper .main_email img {
+      main .contact_wrapper .divider .main_mail_wrapper .main_email img {
         height: 1.5rem; }
 
 .info .info_services .info_services_title {
-  margin: 2rem auto; }
+  margin-top: 2rem; }
   .info .info_services .info_services_title .logo_name_wrapper {
     color: white;
     text-align: center;
-    margin-top: 1rem;
+    padding-top: 1rem;
     margin: auto;
     transition: all 0.1s ease-in;
     transition: all 0.1s ease-in; }
@@ -494,16 +497,20 @@ main .contact_wrapper {
       font-family: 'PT Serif', serif;
       font-weight: lighter;
       font-size: 0.8rem;
-      letter-spacing: 2px; }
+      letter-spacing: 2px;
+      text-transform: uppercase; }
   .info .info_services .info_services_title .logo_name_wrapper {
-    width: 25rem;
+    width: 30rem;
+    height: 15rem;
     padding: 5rem;
     margin: auto;
     text-align: center;
     background-color: black;
-    border-radius: 50%; }
+    border-radius: 50% / 100% 100% 0 0; }
     .info .info_services .info_services_title .logo_name_wrapper:hover {
-      border-radius: 50%; }
+      border-radius: 50% / 100% 100% 0 0; }
+    .info .info_services .info_services_title .logo_name_wrapper h2, .info .info_services .info_services_title .logo_name_wrapper h3 {
+      margin-top: 1.5rem; }
 
 .movie {
   margin-top: 2rem; }
@@ -599,7 +606,7 @@ header {
     header nav .container .logo_name_wrapper {
       color: white;
       text-align: center;
-      margin-top: 1rem;
+      padding-top: 1rem;
       margin: auto;
       transition: all 0.1s ease-in;
       transition: all 0.1s ease-in; }
@@ -623,7 +630,8 @@ header {
         font-family: 'PT Serif', serif;
         font-weight: lighter;
         font-size: 0.8rem;
-        letter-spacing: 2px; }
+        letter-spacing: 2px;
+        text-transform: uppercase; }
     header nav .container .navbar-toggler {
       padding: 0.5rem;
       border-radius: 50%;
@@ -669,7 +677,7 @@ footer {
     footer .footer_header .logo_name_wrapper {
       color: white;
       text-align: center;
-      margin-top: 1rem;
+      padding-top: 1rem;
       margin: auto;
       transition: all 0.1s ease-in;
       transition: all 0.1s ease-in; }
@@ -693,7 +701,8 @@ footer {
         font-family: 'PT Serif', serif;
         font-weight: lighter;
         font-size: 0.8rem;
-        letter-spacing: 2px; }
+        letter-spacing: 2px;
+        text-transform: uppercase; }
   footer .footer_about_us {
     text-align: center;
     color: white;
@@ -784,20 +793,21 @@ footer {
   /* consultancy */
   .backround_img_wrapper h2 {
     font-size: 2.5rem; }
-  .consultancy_service .services_button img {
-    border-radius: 0;
-    width: 20vh; }
-  .consultancy_service .stardust_icon {
-    border-radius: 25px; }
-    .consultancy_service .stardust_icon .logo_name_wrapper {
-      margin: 1rem; }
-      .consultancy_service .stardust_icon .logo_name_wrapper .logo_name_title {
-        font-size: 1.5rem;
-        width: 15vw; }
-  .consultancy_service .company_icon p {
-    font-size: 1.5rem; }
-  .consultancy_service .consultancy_service_text {
-    font-size: 1rem; }
+  .consultancy_service {
+    margin-top: -2rem; }
+    .consultancy_service .services_button img {
+      border-radius: 0;
+      width: 20vh; }
+    .consultancy_service .stardust_icon {
+      border-radius: 25px; }
+      .consultancy_service .stardust_icon .logo_name_wrapper {
+        margin: 1rem; }
+        .consultancy_service .stardust_icon .logo_name_wrapper .logo_name_title {
+          font-size: 1.5rem; }
+    .consultancy_service .company_icon p {
+      font-size: 1.5rem; }
+    .consultancy_service .consultancy_service_text {
+      font-size: 1rem; }
   .arrow_icon svg {
     transform: rotate(90deg); }
   /* subtitles */
@@ -834,19 +844,13 @@ footer {
   .down_arrow_wrapper {
     display: none; }
   .stardust_icon .logo_name_wrapper {
-    margin: 1rem;
-    position: relative;
-    right: 2rem; }
+    margin: 1rem; }
   /* achicado de boton */
   .contact_button a {
     font-size: 1rem;
     text-decoration: none;
     color: black;
     vertical-align: middle; }
-  /* centrado de logo en grafico de consultancy*/
-  .consultancy_service .info_services_button_wrapper .stardust_icon .logo_name_wrapper {
-    position: relative;
-    right: 2rem; }
   /* centrado subs title */
   .intro_media div {
     margin-top: 2rem; }

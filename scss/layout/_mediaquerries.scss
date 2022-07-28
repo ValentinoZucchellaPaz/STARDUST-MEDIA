@@ -72,6 +72,7 @@
         }
     }
     .consultancy_service {
+        margin-top: -2rem;
         .services_button {
             img {
                 border-radius: 0;
@@ -84,7 +85,6 @@
                 margin: 1rem;
                 .logo_name_title {
                     font-size: 1.5rem;
-                    width: 15vw;
                 }
             }
         }
@@ -162,8 +162,6 @@
     .stardust_icon {
         .logo_name_wrapper {
             margin: 1rem;
-            position: relative;
-            right:2rem;
         }
     }
     /* achicado de boton */
@@ -172,17 +170,6 @@
         text-decoration: none;
         color: black;
         vertical-align: middle;
-    }
-    /* centrado de logo en grafico de consultancy*/
-    .consultancy_service {
-        .info_services_button_wrapper {
-            .stardust_icon {
-                .logo_name_wrapper {
-                    position: relative;
-                    right: 2rem;
-                }
-            }
-        }
     }
     /* centrado subs title */
     .intro_media div {

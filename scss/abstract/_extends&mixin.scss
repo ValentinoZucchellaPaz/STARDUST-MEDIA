@@ -12,7 +12,7 @@
     .logo_name_wrapper{
         color: white;
         text-align: center;
-        margin-top: 1rem;
+        padding-top: 1rem;
         margin: auto;
         @include hover (1.03, none, none);
         @include clic;
@@ -30,6 +30,7 @@
             font-weight: lighter;
             font-size: 0.8rem;
             letter-spacing: 2px;
+            text-transform: uppercase;
         }
     }
 }

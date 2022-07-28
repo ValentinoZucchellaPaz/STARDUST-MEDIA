@@ -16,10 +16,18 @@ main {
                     text-transform: inherit;
                 }
                 .contact_form_wrapper {
-                    div {
-                        text-align: center;
-                        margin: 1rem;
+                    text-align: center;
+                    input,select,textarea {
+                        width: 80%;
+                        height: 2.5rem;
+                        margin: 1rem auto;
                         padding: 0.5rem;
+                    }
+                    textarea {
+                        height: 6rem;
+                        vertical-align: text-top;
+                        line-break: auto;
+                        overflow: auto;
                     }
                 }
                 .input-style {
@@ -37,31 +45,21 @@ main {
                         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
                     }
                 }
-                .contact_form_text_problem {
-                    textarea {
-                        height: 6rem;
-                        vertical-align: text-top;
-                        line-break: auto;
-                        overflow: auto;
-                        padding: 0.5rem;
-                    }
-                }
-                .submit_button {
+            }
+                button{
                     @include clic (currentColor);
-                    input{
-                        /* boton submit */
-                        width: 8rem;
-                        position: relative;
-                        font-size: 1rem;
-                        text-transform: uppercase;
-                        border-radius: 50px;
-                        border: none;
-                        background-color: white;
-                        text-align: center;
-                        transition: all 0.1s ease-in;
-                        @include hover (1.05, none, 0 10px 20px rgba(0, 0, 0, 0.2));
+                    /* boton submit */
+                    width: 8rem;
+                    position: relative;
+                    font-size: 1rem;
+                    text-transform: uppercase;
+                    border-radius: 50px;
+                    border: none;
+                    background-color: white;
+                    text-align: center;
+                    transition: all 0.1s ease-in;
+                    @include hover (1.05, none, 0 10px 20px rgba(0, 0, 0, 0.2));
                         
-                    }
                 }
                 .main_mail_wrapper { /* mail y tel debajo de form */
                     display: flex;
@@ -86,4 +84,34 @@ main {
             }
         }
     }
-}
+
+// main {
+//     @include title;
+//     h2 {
+//         text-decoration: underline;
+//     }
+//     .contact_wrapper {
+//         .title {
+//             font-size: 1.25rem;
+//             text-transform: inherit;
+//         }
+//         .e-mail_wrapper {
+//             margin: 1rem auto;
+//             padding: 1rem;
+//             width: 50%;
+//             text-align: center;
+//             border-radius: 25px;
+//             border: 2px solid black ;
+//             @include hover;
+//             h4 {
+//                 font-size: 2rem;
+//                 text-align: center;
+//                 margin: 2rem;
+//                 a {
+//                     color: white;
+//                     text-decoration: none;
+//                 }
+//             }
+//         }
+//     }
+// }
