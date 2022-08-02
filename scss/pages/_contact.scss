@@ -17,7 +17,7 @@ main {
                 }
                 .contact_form_wrapper {
                     text-align: center;
-                    input,select,textarea {
+                    input,select,textarea, button {
                         width: 80%;
                         height: 2.5rem;
                         margin: 1rem auto;
@@ -28,6 +28,21 @@ main {
                         vertical-align: text-top;
                         line-break: auto;
                         overflow: auto;
+                    }
+                    button{
+                        @include clic (currentColor);
+                        /* boton submit */
+                        width: 8rem;
+                        position: relative;
+                        font-size: 1rem;
+                        text-transform: uppercase;
+                        border-radius: 50px;
+                        border: none;
+                        background-color: white;
+                        text-align: center;
+                        transition: all 0.1s ease-in;
+                        @include hover (1.05, none, 0 10px 20px rgba(0, 0, 0, 0.2));
+                            
                     }
                 }
                 .input-style {
@@ -45,22 +60,8 @@ main {
                         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
                     }
                 }
+                
             }
-                button{
-                    @include clic (currentColor);
-                    /* boton submit */
-                    width: 8rem;
-                    position: relative;
-                    font-size: 1rem;
-                    text-transform: uppercase;
-                    border-radius: 50px;
-                    border: none;
-                    background-color: white;
-                    text-align: center;
-                    transition: all 0.1s ease-in;
-                    @include hover (1.05, none, 0 10px 20px rgba(0, 0, 0, 0.2));
-                        
-                }
                 .main_mail_wrapper { /* mail y tel debajo de form */
                     display: flex;
                     justify-content: space-around;

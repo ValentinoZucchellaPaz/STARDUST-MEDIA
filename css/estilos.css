@@ -357,16 +357,16 @@ header, footer {
 
 /* contact button */
 .button_wrapper {
-  margin: 3rem;
+  margin: 2rem;
   text-align: center; }
   .button_wrapper .contact_button {
-    transition: all 0.1s ease-in;
     position: relative;
     font-size: 1rem;
     text-transform: uppercase;
     padding: 1rem 2.5rem;
     display: inline-block;
     border-radius: 50px;
+    transition: all 0.1s ease-in;
     border: none;
     font-family: inherit;
     background-color: white;
@@ -390,6 +390,18 @@ header, footer {
       color: black;
       vertical-align: middle; }
 
+.services_examples {
+  margin: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 1rem; }
+  .services_examples h3 {
+    padding: 1rem;
+    padding-bottom: 2rem;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 100; }
+
 /* dividir formulario entre form e img */
 main .title {
   text-align: center;
@@ -410,7 +422,7 @@ main .contact_wrapper {
       text-transform: inherit; }
     main .contact_wrapper .divider form .contact_form_wrapper {
       text-align: center; }
-      main .contact_wrapper .divider form .contact_form_wrapper input, main .contact_wrapper .divider form .contact_form_wrapper select, main .contact_wrapper .divider form .contact_form_wrapper textarea {
+      main .contact_wrapper .divider form .contact_form_wrapper input, main .contact_wrapper .divider form .contact_form_wrapper select, main .contact_wrapper .divider form .contact_form_wrapper textarea, main .contact_wrapper .divider form .contact_form_wrapper button {
         width: 80%;
         height: 2.5rem;
         margin: 1rem auto;
@@ -420,6 +432,28 @@ main .contact_wrapper {
         vertical-align: text-top;
         line-break: auto;
         overflow: auto; }
+      main .contact_wrapper .divider form .contact_form_wrapper button {
+        transition: all 0.1s ease-in;
+        /* boton submit */
+        width: 8rem;
+        position: relative;
+        font-size: 1rem;
+        text-transform: uppercase;
+        border-radius: 50px;
+        border: none;
+        background-color: white;
+        text-align: center;
+        transition: all 0.1s ease-in;
+        transition: all 0.1s ease-in; }
+        main .contact_wrapper .divider form .contact_form_wrapper button:active {
+          transform: scale(0.8);
+          color: currentColor;
+          background-color: none; }
+        main .contact_wrapper .divider form .contact_form_wrapper button:hover {
+          border-radius: 30px;
+          transform: scale(1.05);
+          background-color: none;
+          box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); }
     main .contact_wrapper .divider form .input-style {
       border-radius: 10px;
       height: 2rem;
@@ -432,28 +466,6 @@ main .contact_wrapper {
       main .contact_wrapper .divider form .input-style:focus {
         transition: all 0.1s ease-in;
         transform: scale(1.05);
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); }
-    main .contact_wrapper .divider button {
-      transition: all 0.1s ease-in;
-      /* boton submit */
-      width: 8rem;
-      position: relative;
-      font-size: 1rem;
-      text-transform: uppercase;
-      border-radius: 50px;
-      border: none;
-      background-color: white;
-      text-align: center;
-      transition: all 0.1s ease-in;
-      transition: all 0.1s ease-in; }
-      main .contact_wrapper .divider button:active {
-        transform: scale(0.8);
-        color: currentColor;
-        background-color: none; }
-      main .contact_wrapper .divider button:hover {
-        border-radius: 30px;
-        transform: scale(1.05);
-        background-color: none;
         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); }
     main .contact_wrapper .divider .main_mail_wrapper {
       /* mail y tel debajo de form */

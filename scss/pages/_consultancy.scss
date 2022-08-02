@@ -86,20 +86,19 @@
 }
 /* contact button */
 .button_wrapper {
-    margin: 3rem;
+    margin: 2rem;
     text-align: center;
     .contact_button {
-        @include hover (1.05, none);
         position: relative;
         font-size: 1rem;
         text-transform: uppercase;
         padding: 1rem 2.5rem;
         display: inline-block;
         border-radius: 50px;
+        @include hover (1.05, none);
         &:hover{
             border-radius: 50px;
         }
-        // para pisar border-radius de "@include hover" y que no cambie con el hover
         border: none;
         font-family: inherit;
         background-color: white;
@@ -116,3 +115,18 @@
 }
 
 // cambio ligero entre clients de consultancy y subs, sacar border radius
+
+.services_examples {
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 1rem;
+    h3 {
+        padding: 1rem;
+        padding-bottom: 2rem;
+        text-align: center;
+        color: white;
+        text-transform: uppercase;
+        font-weight: 100;
+    }
+    
+}
